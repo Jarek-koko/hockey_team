@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5">
+    <name>Top Players</name>
+    <author>Klich Jarosław</author>
+    <creationDate>September 2010</creationDate>
+    <copyright>Klich Jarosław</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>Jarek.koko+HockeyTeam@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>Module Version 1.00</version>
+    <description>Module show  top 10 players</description>
+    <files>
+        <filename module="mod_topplayer">mod_topplayer.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <params>
+        <param name="sez" type="sql" default="" label="Select regular season"  query="SELECT id AS value, nazwa AS sez FROM #__hockey_system ORDER BY id DESC" />
+        <param name="type_of_match" type="list" default="0" label="Select type of match" description="You can select the match type of your choice">
+            <option value="0">Regular season</option>
+            <option value="1">Play-off</option>
+        </param>
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        <param name="title1" type="text" default="P" label="First tab" description="Name the first tab Points" />
+        <param name="title2" type="text" default="G" label="Second tab" description="Name the second tab Goals" />
+        <param name="title3" type="text" default="A" label="Third tab" description="Name the thirdt tab Assists" />
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    </params>
+</install>

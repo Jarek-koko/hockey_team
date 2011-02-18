@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <params>
+        <param name="@heading" type="heading" default="GENERAL SETTINGS LABEL" />
+        <param name="iddsfp" type="sql" default="1" label="Select a season" description="You must select season for display in the front" query="SELECT id AS value, nazwa AS iddsfp FROM #__hockey_system" />
+        <param name="gnumber" type="radio" default="1" label="Show graphic numbers" description="If yes numbers will be change in images" >
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="@heading" type="heading" default="NAME ROUNDS PLAY OFF" />
+        <param name="round1" type="text" default="Round 1"      label="ROUND_1" description="ROUND_1" size="30" />
+        <param name="round2" type="text" default="Round 2"      label="ROUND_2" description="ROUND_2" size="30" />
+        <param name="round3" type="text" default="Round 3"      label="ROUND_3" description="ROUND_3" size="30" />
+        <param name="round4" type="text" default="Round 4"      label="ROUND_4" description="ROUND_4" size="30" />
+        <param name="round5" type="text" default="Round 5"      label="ROUND_5" description="ROUND_5" size="30" />
+        <param name="round6" type="text" default="Round 6"      label="ROUND_6" description="ROUND_6" size="30" />
+        <param name="round7" type="text" default="Quarterfinal" label="ROUND_7" description="ROUND_7" size="30" />
+        <param name="round8" type="text" default="Semifinal"    label="ROUND_8" description="ROUND_8" size="30" />
+        <param name="round9" type="text" default="Final"        label="ROUND_9" description="ROUND_9" size="30" />
+    </params>
+</config>

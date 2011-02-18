@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5">
+    <name>Standings</name>
+    <author>Klich Jarosław</author>
+    <creationDate>September 2010</creationDate>
+    <copyright>Klich Jarosław</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>Jarek.koko+HockeyTeam@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>Module Version 1.00</version>
+    <description>Standings</description>
+    <files>
+        <filename module="mod_standings">mod_standings.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <params>
+        <param name="sez" type="sql" default="" label="Select regular season"  query="SELECT id AS value, nazwa AS sez FROM #__hockey_system ORDER BY id DESC" />
+        <param name="sname" type="list" default="0" label="Short team name" description="Show short team name">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+        <param name="title1" type="text" default="P" label="First column" description="Name the first column" />
+        <param name="title2" type="text" default="Team" label="Second column" description="Name the second column" />
+        <param name="title3" type="text" default="Ptk" label="Third column" description="Name the thirdt column" />
+        <param name="group1" type="text" default="0" label="Number - first group" description="Number of the first group" />
+        <param name="group2" type="text" default="1" label="Number - second group" description="Number of the second group" />
+        <param name="class1" type="text" default="tab20" label="First group name class" description="First group name class - style" />
+        <param name="class2" type="text" default="tab21" label="Second group name class" description="Second group name class - style" />
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    </params>
+    <params group="advanced">
+        <param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+            <option value="1">Use global</option>
+            <option value="0">No caching</option>
+        </param>
+        <param name="cache_time" type="text" default="90" label="Cache Time" description="The time before the module is recached" />
+    </params>
+</install>

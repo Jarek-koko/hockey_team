@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5">
+    <name>Scoreboard</name>
+    <author>Klich Jarosław</author>
+    <creationDate>September 2010</creationDate>
+    <copyright>Klich Jarosław</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>Jarek.koko+HockeyTeam@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>Module Version 1.00</version>
+    <description>A scoreboard is a large board for publicly displaying the score</description>
+    <files>
+        <filename module="mod_scoreboard">mod_scoreboard.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <params>
+        <param name="id" type="text" default="1" label="ID match" description="Match identification number" />
+        <param name="info" type="text" default="" label="Short info" description="Short information about the match" />
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        <param name="popup" type="list" default="1" label="Using popup box" description="Using the modal popup box for the link">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="title" type="text" default="Raport" label="Link title" description="Link title" />
+        <param name="width" type="text" default="800" label="Width popup box" description="Width popup box" />
+        <param name="height" type="text" default="600" label="Height popup box" description="Height popup box" />
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        <param name="show_countdown" type="list" default="1" label="Show countdown" description="Display or hide countdown">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="day" type="text" default="01" label="Day" description="Day of the event (1-31)"/>
+        <param name="month" type="text" default="01" label="Month" description="Month of the event  (1-12)"/>
+        <param name="year" type="text" default="2011" label="Year" description="Year of the event  (1971 - 20..)"/>
+        <param name="hour" type="text" default="01" label="Hour" description="Hour of the event (0-23)"/>
+        <param name="minute" type="text" default="01" label="Minute" description="Minute of the event (0-59)"/>
+        <param name="second" type="text" default="01" label="Second" description="Second of the event (0-59)"/>
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        <param name="m_start" type="text" default="Match is underway" label="Underway - message" description="Underway message"/>
+        <param name="t_day" type="text" default="Days" label="Days" description="Title days"/>
+        <param name="t_hour" type="text" default="Hours" label="Hours" description="Title hours"/>
+        <param name="t_minute" type="text" default="Minutes" label="Minutes" description="Title minutes"/>
+        <param name="t_second" type="text" default="Seconds" label="Seconds" description="Title seconds"/>
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        <param name="t_sovertime" type="text" default="Overtime" label="Overtime" description="Title overtime"/>
+        <param name="t_shoutouts" type="text" default="Shoutouts" label="Shoutouts" description="Title shoutouts"/>
+    </params>
+</install>

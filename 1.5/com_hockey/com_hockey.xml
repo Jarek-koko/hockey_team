@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+    <name>Hockey</name>
+    <author>Klich Jarosław</author>
+    <authoremail>Jarek.koko+HockeyTeam@gmail.com</authoremail>
+    <authorurl></authorurl>
+    <copyright>Klich Jarosław</copyright>
+    <creationdate>September 2010</creationdate>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>0.957 beta</version>
+    <description>Hockey Team</description>
+    <install>
+        <sql folder="admin/sql">
+            <file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql  folder="admin/sql">
+            <file driver="mysql" charset="utf8">uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <!-- Site Main Language File Copy Section -->
+    <languages folder="languages/site">
+        <language tag="en-GB">en-GB.com_hockey.ini</language>
+        <language tag="pl-PL">pl-PL.com_hockey.ini</language>
+    </languages>
+   
+   <!-- Site Main File Copy Section -->
+    <files folder="site/component">
+        <filename>controller.php</filename>
+        <filename>hockey.php</filename>
+        <filename>router.php</filename>
+        <filename>index.html</filename>
+        <folder>assets</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>helpers</folder>
+    </files>
+
+    <media folder="images" destination="../images/hockey">
+        <filename>numbers/00.png</filename>
+        <filename>numbers/0.png</filename>
+        <filename>numbers/01.png</filename>
+        <filename>numbers/02.png</filename>
+        <filename>numbers/03.png</filename>
+        <filename>numbers/04.png</filename>
+        <filename>numbers/05.png</filename>
+        <filename>numbers/06.png</filename>
+        <filename>numbers/07.png</filename>
+        <filename>numbers/08.png</filename>
+        <filename>numbers/09.png</filename>
+        <filename>numbers/sk.png</filename>
+        <filename>numbers/ss.png</filename>
+        <filename>numbers/index.html</filename>
+        <filename>teams/non.gif</filename>
+        <filename>teams/index.html</filename>
+        <filename>players/brak.jpg</filename>
+        <filename>players/index.html</filename>
+    </media>
+    <administration>
+        <menu img="components/com_hockey/assets/icon-16-menu-hockey.png">Hockey</menu>
+
+        <files folder="admin/component">
+            <filename>admin.hockey.php</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>tables</folder>
+            <folder>helpers</folder>
+        </files>
+
+        <files folder="admin/sql">
+            <filename>install.mysql.utf8.sql</filename>
+            <filename>uninstall.mysql.utf8.sql</filename>
+        </files>
+
+        <languages folder="languages/admin">
+            <language tag="en-GB">en-GB.com_hockey.ini</language>
+            <language tag="en-GB">en-GB.com_hockey.menu.ini</language>
+            <language tag="pl-PL">pl-PL.com_hockey.ini</language>
+            <language tag="pl-PL">pl-PL.com_hockey.menu.ini</language>
+        </languages>
+    </administration>
+    <installfile>admin/install.hockey.php</installfile>
+    <uninstallfile>admin/uninstall.hockey.php</uninstallfile>
+</install>

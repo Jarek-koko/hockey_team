@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `#__hockey_tabela`;
+DROP TABLE IF EXISTS `#__hockey_match_goals`;
+DROP TABLE IF EXISTS `#__hockey_match_goalie`;
+DROP TABLE IF EXISTS `#__hockey_match_penalty`;
+DROP TABLE IF EXISTS `#__hockey_match_players`;
+DROP TABLE IF EXISTS `#__hockey_match_rapport`;
+DROP TABLE IF EXISTS `#__hockey_match`;
+DROP TABLE IF EXISTS `#__hockey_players`;
+DROP TABLE IF EXISTS `#__hockey_referee`;
+DROP TABLE IF EXISTS `#__hockey_teams`;
+DROP TABLE IF EXISTS `#__hockey_system`;

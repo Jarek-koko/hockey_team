@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <layout title="All Reports">
+        <message>
+	<![CDATA[All match reports]]>
+        </message>
+    </layout>
+    <state>
+        <name>Reports</name>
+        <description>Match Reports</description>
+        <params>
+            <param name="show_select" type="radio" default="1" label="Display Select Season" description="Show/Hide the Display Select season">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </param>
+
+        </params>
+    </state>
+</metadata>

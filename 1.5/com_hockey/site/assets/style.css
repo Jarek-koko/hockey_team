@@ -1,0 +1,133 @@
+/* reports  */
+.bb table {margin:20px auto; width:100%;border-collapse: collapse; }
+.bb table caption {text-align:left; padding:5px 15px; background-color:#8b0000; color:#fff; font-weight:bold}
+.bb .par{text-align:left; padding:5px 15px;  background: transparent url(../assets/headred.gif) repeat-x scroll 50% 50%; color:#fff; font-weight:bold;margin-bottom:15px}
+.bb table th{background: url("../assets/htab.png") repeat-x scroll 0 -31px transparent; border: 1px solid #c8c8c8;padding: 4px; text-align:center; }
+.bb table td{padding:3px 4px; border:1px solid #c8c8c8; text-align:center; }
+.bb table .ck {text-align:left; padding:5px; background-color:#DDA; font-weight:bold;color:#777; }
+.bb .opis{border:1px solid #8b0000; padding:2px}
+.bb .opis {width:99%; margin:10px auto; }
+
+.ple { border:1px solid #8b0000; padding:2px; margin:5px auto; width:48%; text-align:left;}
+.ple ul {list-style-image: url(../assets/user.png); }
+.ple li {padding:4px 10px}
+.ple li span {position: relative; top:-3px; left:-3px;}
+
+.ref { border:1px solid #8b0000; padding:2px; margin:5px auto; width:48%; text-align:left;}
+.ref ul {list-style-image: url(../assets/user_black.png); }
+.ref li {padding:4px 10px}
+.ref li span {position: relative; top:-3px; left:-3px;}
+
+/*  headers for compenent  */
+div.componentheading {background-color:#E6EECC; font-size:1.2em; font-weight:bold; margin:0 0 20px 0; padding:5px 10px 4px 10px; border:1px solid #C8C8C8;text-align:center;}
+/* scoreboard in raport  */
+#scoreboard { font-family: Verdana,Helvetica,sans-serif; height:230px; background:#B30202 url(../assets/headred.gif) repeat-x scroll bottom center; color:#ff0; font-size:1.1em; font-weight:bold; margin:0px auto 25px auto; padding:25px 0; text-align:center; border:1px solid #000;}
+#scoreboard .board { margin:0 auto;  border:1px solid #FFF; padding:20px 10px;  background:#000000 url(../assets/bg_scoreboard.gif) repeat fixed center; width:550px; }
+#scoreboard .board div  {text-align: center;}
+#scoreboard .wl {float:left;width:50%;font-size:15px}
+#scoreboard .wp {float:right;width:50%;font-size:15px}
+#scoreboard .ln { margin:10px auto; width:350px}
+#scoreboard .board .ind {padding-top: 20px;}
+#scoreboard .board .logo1{float:left; }
+#scoreboard .board .scoor{float:left; padding-top:20px; width:185px; }
+#scoreboard .board .scoor-live {float:left; padding-top:30px; width:185px;font-size: 40px }
+#scoreboard .board .logo2{float:left;}
+#scoreboard .board .lo{border:1px solid white; margin:5px}
+#scoreboard .board .lo:hover {border:0px; margin:6px}
+#scoreboard .board .dignumber {margin-bottom: 15px}
+#scoreboard #end {color:#FF6600;font-size: 110%;}
+
+/* dla tabeli wybór kolejki w meczach */
+.square{width:99%;padding: 2px; margin: 15px auto; text-align:center; border: 1px solid #999;background-color:#F0F0F0; }
+.square p {text-align: center; font-weight: bold; padding:5px; font-size: 13px;}
+table.kol { margin: 10px auto; border-collapse: separate; width: 100%; font-weight: bold; font-size: 110%}
+table.kol td { padding: 3px; text-align: center; background-color: #F9F9F9; border: 1px solid #BBBBBB;}
+table.kol td:hover { background-color: #9EA800;border: 1px solid #FFF; }
+table.kol .red {color:red;}
+table.kol a {padding:2px 10px;font-family:Helvetica,Arial; color:#555555;}
+
+.headtab {text-align:left; padding:5px 15px; background:transparent url(../assets/headred.gif) repeat-x scroll 50% 50%; color:#fff; font-weight:bold; height:25px}
+.headtab div { padding:3px; font-size: 13px;}
+
+#wybor {margin: 5px 0 40px 0;}
+#wybor fieldset { background:#E6EECC;}
+#wybor legend {margin-left:15px;background:#FFF;border:1px solid #555;padding:4px; font-size: 13px}
+#wybor #selsez {text-align: center;}
+#wybor #selsez select {margin:0 10px;}
+
+table.chmatch {margin:10px auto;}
+
+/* tabela points */
+table.tableleague{border-spacing:1px;border-collapse:separate;background-color:#CDCDCD;font-size:11px;width:100%;text-align:center;margin:10px 0 15px}
+table.tableleague thead tr th,table.tableleague tfoot tr th{background-color:#e6EEEE;border:1px solid #FFF;padding:4px}
+table.tableleague thead tr .header{background-image:url(../assets/bg.gif);background-repeat:no-repeat;background-position:center right;cursor:pointer}
+table.tableleague tbody td {color:#3D3D3D;background-color:#FFF;vertical-align:top;padding:4px}
+table.tableleague tbody tr.odd td {background-color:#F0F0F6}
+table.tableleague thead tr .headerSortUp { background-image: url(../assets/asc.gif);}
+table.tableleague thead tr .headerSortDown { background-image: url(../assets/desc.gif);}
+table.tableleague thead tr .headerSortDown, table.tableleague thead tr .headerSortUp { background-color: #8dbdd8;}
+table.tableleague tbody td.al {text-align:left; padding-left:5px}
+
+/* tabela players and statistic */
+table.tableplayers {border-spacing:1px;border-collapse:separate;background-color:#CDCDCD;font-size:11px;width:100%;text-align:center;margin:10px 0 15px}
+table.tableplayers thead tr th, table.tableplayers tfoot tr th {background-color: #E6EECC;border: 1px solid #FFF; padding: 4px;}
+table.tableplayers thead tr .header {background-image: url(../assets/bg.gif);background-repeat: no-repeat;background-position: center right;cursor: pointer;}
+table.tableplayers tbody td {color: #3D3D3D;background-color:#FFF;padding: 4px;vertical-align: top; }
+table.tableplayers tbody td.al {text-align:left; padding-left:5px}
+table.tableplayers tbody tr.odd td {background-color:#EBEEEF;}
+table.tableplayers thead tr .headerSortUp { background-image: url(../assets/asc.gif);}
+table.tableplayers thead tr .headerSortDown { background-image: url(../assets/desc.gif);}
+table.tableplayers thead tr .headerSortDown, table.tableplayers thead tr .headerSortUp { background-color: #8dbdd8;}
+
+/*player */
+#players {color:#FFF; text-align:center;}
+#players .imgp {border:2px solid #fff;}
+#players .boxy { background:#B30202 url(../assets/headred.gif) repeat-x scroll bottom center; border:1px solid #000;  margin:0 auto 40px auto; padding:40px 0; width:100%;}
+#players .boxy p {padding-bottom: 10px;}
+#players .boxy p.namep {font-size: 1.8em}
+table.tabplayer {margin:20px 0; width:100%; border-collapse:separate}
+table.tabplayer th, table.tabplayer td { background: transparent url(../assets/headred.gif) repeat-x scroll 50% 50%; border:2px solid #8b0000;color:#FFF; text-align:center;}
+div.leg_p { display:block;}
+
+
+/* tooltip foto players */
+#tooltip{position:absolute;border:2px solid #000;background:#B30202;display:none;color:#fff;padding:2px}
+#myFlash{width: 100%; height:650px; background-color: #000; padding: 0; margin:0}
+
+.prw{float:right}
+.lew{float:left}
+.clr{ content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+
+/* select player in player */
+.box {float: right;}
+.dropdown a:link , .dropdown a:visited { color:#c8c8c8; text-decoration:none; outline:none; font-weight: bold}
+.dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px; }
+.dropdown dd { position:relative; }
+.dropdown dd ul { background:#484848; border:1px solid #1a1a1a; display:none;left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:170px; list-style:none;}
+.dropdown dd ul li a { padding:6px; display:block; border-bottom: 1px solid #3f3f3f;}
+.dropdown dd ul li a:hover { background-color:#e6eecc; border-bottom: 1px solid #3f3f3f; color:#000}
+.dropdown dt span {background:#484848 url(../assets/arrowdown.png) no-repeat scroll 90% 50%; display:block; padding-right:20px;border:1px solid #1a1a1a; width:150px; padding: 6px 10px;font-weight: bold}
+
+/*tabs player*/
+ul.tabs {height:30px;border-bottom:1px solid #484848;margin:0!important;padding:0}
+ul.tabs li{float:left;list-style-type:none;margin:0;padding:0}
+ul.tabs a{float:left;font-size:13px;display:block;text-decoration:none;border:1px solid #484848;border-bottom:0;height:18px;background-color:#484848;color:#fff;margin-right:2px;position:relative;top:1px;outline:0;-moz-border-radius:4px 4px 0 0;padding:5px 30px}
+ul.tabs a:hover{background-color:#A3A3A3}
+ul.tabs a.current{background-color:#B30202;border-bottom:1px solid #B30202;cursor:default}
+.panes > div{display:none;border:1px solid #000;border-top:0;font-size:14px;background-color:#B30202;min-height:200px;background:#B30202 url(../assets/headred.gif) repeat-x scroll bottom center;padding:15px 10px}
+
+/* tabs stats  */
+ul.css-tabs{height:30px;border-bottom:1px solid #C8C8C8;margin:0!important;padding:0}
+ul.css-tabs li{float:left;list-style-type:none;margin:0;padding:0}
+ul.css-tabs a{float:left;font-size:12px;display:block;text-decoration:none;border:1px solid #C8C8C8;border-bottom:0;height:18px;background:url(../assets/tab.png) no-repeat scroll 0 0 transparent;color:#777;margin-right:2px;position:relative;top:1px;outline:0;-moz-border-radius:4px 4px 0 0;padding:5px 7px}
+ul.css-tabs a:hover{background-color:#F7F7F7;color:#333}
+ul.css-tabs a.current{background-color:#fff;background:url(../assets/tab.png) no-repeat scroll 50% 60% transparent;border-bottom:1px solid #fff;color:#000;cursor:default}
+.css-panes > div{display:none;border:1px solid #C8C8C8;min-height:150px;background-color:#fff;border-width:0 1px 1px;padding:15px 10px}
+
+/* tabs for raport match */
+ul.tabs-rec{height:30px;border-bottom:1px solid #C8C8C8;margin:0!important;padding:0}
+ul.tabs-rec li{float:left;list-style-type:none;margin:0;padding:0}
+ul.tabs-rec a{float:left;font-size:12px;display:block;text-decoration:none;border:1px solid #C8C8C8;border-bottom:0;height:18px;background:url(../assets/tab.png) no-repeat scroll 0 0 transparent;color:#777;margin-right:2px;position:relative;top:1px;outline:0;-moz-border-radius:4px 4px 0 0;padding:5px 15px}
+ul.tabs-rec a:hover{background-color:#F7F7F7;color:#333}
+ul.tabs-rec a.current{background-color:#fff;background:url(../assets/tab.png) no-repeat scroll 50% 60% transparent;border-bottom:1px solid #fff;color:#000;cursor:default}
+.panes-rec > div{display:none;border:1px solid #C8C8C8;min-height:150px;background-color:#fff;border-width:0 1px 1px;padding:15px 10px}

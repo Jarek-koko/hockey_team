@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<element>
+	<player>
+		<name>Antonovič</name>
+		<firstname>Radim</firstname>
+		<height>186</height>
+		<weight>76</weight>
+		<date>1981-07-11</date>
+		<position>3</position>
+		<description><![CDATA[Numer koszulki: 49 dkddld jdjdjjdj jd djdjd j djdjdjjd jdjdjd jjdjdjd <b>djjdjdjdj</b> djdjdjdjj djdjjdjdj djdjdjdj jjdjjjj djjdjjj dd jjdjdjdjdjdj djdjdjdjjd jdjdj <p> pddpdpdpd </p> dkdkdkdkdk
+		djdjdjdjjdd djjdjdjdjdj jdjdjdj <br> jdjjdjdjj djjdjdjjdjj djdjdjdjdj <br> jdjdjdjdjdj djddjjj
+          ]]></description>
+		<photo>antonovic.r.jpg</photo>
+		<number>45</number>
+	</player>
+	<player>
+		<name>Banaszczak</name>
+		<firstname>Andrzej</firstname>
+		<height>183</height>
+		<weight>95</weight>
+		<date>1976-10-05</date>
+		<position>2</position>
+		<description>Numer koszulki: 23</description>
+		<photo>brak.jpg</photo>
+		<number>47</number>
+	</player>
+	<player>
+		<name>Bernat</name>
+		<firstname>Tobiasz</firstname>
+		<height>176</height>
+		<weight>81</weight>
+		<date>1983-01-12</date>
+		<position>3</position>
+		<description>Numer koszulki: 5</description>
+		<photo>bernat.t.jpg</photo>
+		<number>06</number>
+	</player>
+	<player>
+		<name>Biela</name>
+		<firstname>Sebastian</firstname>
+		<height>178</height>
+		<weight>78</weight>
+		<date>1981-09-09</date>
+		<position>3</position>
+		<description>Numer koszulki: 9</description>
+		<photo>biela.s.jpg</photo>
+	</player>
+	<player>
+		<name>Da Costa</name>
+		<firstname>Gabriel</firstname>
+		<height>172</height>
+		<weight>76</weight>
+		<date>1984-06-16</date>
+		<position>3</position>
+		<description>Numer koszulki: 84</description>
+		<photo>da-costa.g.jpg</photo>
+	</player>
+	<player>
+		<name>Da Costa</name>
+		<firstname>Teddy</firstname>
+		<height>178</height>
+		<weight>73</weight>
+		<date>1986-02-17</date>
+		<position>3</position>
+		<description>Numer koszulki: 77</description>
+		<photo>da_costa.t.jpg</photo>
+	</player>
+	<player>
+		<name>Dronia</name>
+		<firstname>Paweł</firstname>
+		<height>180</height>
+		<weight>78</weight>
+		<date>1989-06-30</date>
+		<position>2</position>
+		<description>Numer koszulki: 89</description>
+		<photo>dronia.p.jpg</photo>
+	</player>
+	<player>
+		<name>Duszak</name>
+		<firstname>Kamil</firstname>
+		<height>183</height>
+		<weight>91</weight>
+		<date>1985-04-11</date>
+		<position>2</position>
+		<description>Numer koszulki: 6</description>
+		<photo>duszak.k.jpg</photo>
+	</player>
+	<player>
+		<name>Dzwonek</name>
+		<firstname>Tomasz</firstname>
+		<height>184</height>
+		<weight>70</weight>
+		<date>1987-04-15</date>
+		<position>1</position>
+		<description>Numer koszulki: 33</description>
+		<photo>dzwonek.t.jpg</photo>
+	</player>
+	<player>
+		<name>Jaros</name>
+		<firstname>Marcin</firstname>
+		<height>186</height>
+		<weight>82</weight>
+		<date>1981-02-27</date>
+		<position>3</position>
+		<description>Numer koszulki: 69</description>
+		<photo>jaros.m..jpg</photo>
+	</player>
+	<player>
+		<name>Jaworski</name>
+		<firstname>Tomasz</firstname>
+		<height>183</height>
+		<weight>90</weight>
+		<date>1971-07-03</date>
+		<position>1</position>
+		<description>Numer koszulki: 37</description>
+		<photo>jaworski.t.jpg</photo>
+	</player>
+	<player>
+		<name>Kohut</name>
+		<firstname>Jozef</firstname>
+		<height>186</height>
+		<weight>89</weight>
+		<date>1975-01-27</date>
+		<position>3</position>
+		<description>Nr koszulki: 25</description>
+		<photo>brak.jpg</photo>
+	</player>
+	<player>
+		<name>Kozłowski</name>
+		<firstname>Marcin</firstname>
+		<height>174</height>
+		<weight>76</weight>
+		<date>1983-04-10</date>
+		<position>3</position>
+		<description>Numer koszulki: 71</description>
+		<photo>kozlowski.m.jpg</photo>
+	</player>
+	<player>
+		<name>Kozłowski</name>
+		<firstname>Tomasz</firstname>
+		<height>181</height>
+		<weight>75</weight>
+		<date>1986-09-23</date>
+		<position>3</position>
+		<description>Numer koszulki: 18</description>
+		<photo>kozlowski.t.jpg</photo>
+	</player>
+	<player>
+		<name>Kubalski</name>
+		<firstname>Adam</firstname>
+		<height>186</height>
+		<weight>84</weight>
+		<date>1985-05-15</date>
+		<position>1</position>
+		<description/>
+		<photo>brak.jpg</photo>
+	</player>
+	<player>
+		<name>Kuc</name>
+		<firstname>Jarosław</firstname>
+		<height>184</height>
+		<weight>86</weight>
+		<date>1978-02-23</date>
+		<position>2</position>
+		<description>Numer koszulki: 7</description>
+		<photo>kuc.j.jpg</photo>
+	</player>
+	<player>
+		<name>Lezo</name>
+		<firstname>Anton</firstname>
+		<height>177</height>
+		<weight>77</weight>
+		<date>1972-04-03</date>
+		<position>3</position>
+		<description>Numer koszulki: 14</description>
+		<photo>lezo.a.jpg</photo>
+	</player>
+	<player>
+		<name>Marcińczak</name>
+		<firstname>Oktawiusz</firstname>
+		<height>181</height>
+		<weight>87</weight>
+		<date>1978-07-02</date>
+		<position>2</position>
+		<description>Numer koszulki: 44</description>
+		<photo>marcinczak.o.jpg</photo>
+	</player>
+	<player>
+		<name>Mrozowski</name>
+		<firstname>Grzegorz</firstname>
+		<height>176</height>
+		<weight>69</weight>
+		<date>1985-01-16</date>
+		<position>1</position>
+		<description>Numer koszulki: 1</description>
+		<photo>mrozowski.g.jpg</photo>
+	</player>
+	<player>
+		<name>Opatovsky</name>
+		<firstname>Martin</firstname>
+		<height>181</height>
+		<weight>82</weight>
+		<date>1975-05-09</date>
+		<position>3</position>
+		<description>Numer koszulki: 27</description>
+		<photo>opatovsky.m.jpg</photo>
+	</player>
+	<player>
+		<name>Oravec</name>
+		<firstname>Tomas</firstname>
+		<height>177</height>
+		<weight>78</weight>
+		<date>1982-11-03</date>
+		<position>3</position>
+		<description/>
+		<photo>oravec.t.jpg</photo>
+	</player>
+	<player>
+		<name>Pawlak</name>
+		<firstname>Mateusz</firstname>
+		<height>187</height>
+		<weight>100</weight>
+		<date>1988-03-18</date>
+		<position>2</position>
+		<description>Numer koszulki: 26</description>
+		<photo>pawlak.m.jpg</photo>
+	</player>
+	<player>
+		<name>Piotrowski</name>
+		<firstname>Bartłomiej</firstname>
+		<height>182</height>
+		<weight>88</weight>
+		<date>1981-01-19</date>
+		<position>2</position>
+		<description>Numer koszulki: 61</description>
+		<photo>piotrowski.b.jpg</photo>
+	</player>
+	<player>
+		<name>Podlipni</name>
+		<firstname>Zbigniew</firstname>
+		<height>176</height>
+		<weight>87</weight>
+		<date>1973-01-06</date>
+		<position>3</position>
+		<description>Numer koszulki: 39</description>
+		<photo>podlipni.z.jpg</photo>
+	</player>
+	<player>
+		<name>Podsiadło</name>
+		<firstname>Łukasz</firstname>
+		<height>180</height>
+		<weight>91</weight>
+		<date>1986-07-07</date>
+		<position>3</position>
+		<description>Numer: 20</description>
+		<photo>brak.jpg</photo>
+	</player>
+	<player>
+		<name>Strapko</name>
+		<firstname>Lubomír</firstname>
+		<height>186</height>
+		<weight>90</weight>
+		<date>1975-09-30</date>
+		<position>2</position>
+		<description>Numer koszulki: 29</description>
+		<photo>strapko.l.jpg</photo>
+	</player>
+	<player>
+		<name>Ślusarczyk</name>
+		<firstname>Artur</firstname>
+		<height>180</height>
+		<weight>90</weight>
+		<date>1977-11-03</date>
+		<position>3</position>
+		<description>Numer koszulki: 8</description>
+		<photo>slusarczyk.a.jpg</photo>
+	</player>
+	<player>
+		<name>Wilczek</name>
+		<firstname>Łukasz</firstname>
+		<height>179</height>
+		<weight>84</weight>
+		<date>1982-03-16</date>
+		<position>2</position>
+		<description>Numer koszulki: 22</description>
+		<photo>wilczek.l.jpg</photo>
+	</player>
+</element>

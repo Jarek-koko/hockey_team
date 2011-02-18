@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <layout title="Players Team">
+        <message>
+            <![CDATA[Players Team]]>
+        </message>
+    </layout>
+    <state>
+        <name>Players Team</name>
+        <description>Presentation in flash - if you want change language look at  /components/com_hockey/view/playerflash/tmp/config.xml</description>
+    </state>
+</metadata>

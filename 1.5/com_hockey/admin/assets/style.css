@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+/* icona */
+.icon-32-multiple {background-image: url(icon-32-multiple.png);}
+.icon-32-update {background-image: url(icon-32-update.png);}
+.icon-48-logo { background-image:url(logo.png);}
+
+#ht select, #ht input, #ht label {font-size: 12px;}
+/* validation form */
+#ht .invalid { border: 2px solid red; }
+
+/*page info*/
+#ht .icon-stat{background-color:#F6F6F6;width:400px;border-color:#CDCDCD;border-style:solid;border-width:1px;margin:10px 200px 10px 10px;padding:10px 5px}
+#ht .hockey-ok{float:right;background:url(chk_on.png) no-repeat left top;margin:2px 10px;padding:0 0 0 25px}
+#ht .hockey-error{float:right;background:url(chk_off.png) no-repeat left top;margin:2px 10px;padding:0 0 0 25px}
+#ht .status-info {font-family: Helvetica, Helvetica, Aria;  font-size: 12px; color: #666666;}
+
+/*form for create season */
+#ht #formadd { width:800px; margin-left: auto; margin-right: auto; margin-bottom: 5px}
+#ht #formadd form div { display: block; margin: 15px 5px; padding: 2px; clear: left}
+#ht #formadd form div label { float: left; width: 300px; text-align: right; padding:0 1em }
+#ht #formadd fieldset {border: 1px dotted #CCCCCC; margin-bottom: 15px; padding: 5px; background-color: #FBFBFB}
+#ht #formadd select, #formadd input {color: #00008B; background-color: #F0F0F0; border: 1px inset #00008B}
+
+/* square for select matchday  */
+#ht .square {width:750px;padding: 2px; margin: 15px auto; text-align:center; border: 1px solid #0B55C4;background-color:#F0F0F0; font-size:13px;}
+#ht table.kol { margin: 10px auto;  border-collapse: separate; width: 600px; font-weight: bold;}
+#ht table.kol td { padding: 3px; text-align: center; background-color: #F9F9F9; border: 1px solid #BBBBBB;}
+#ht table.kol td:hover { background-color: #9EA800;border: 1px solid #FFF; }
+#ht table.kol .red {color:red;}
+#ht table.kol a {padding:2px 10px; font-family:Helvetica, Arial}
+
+/* form for raport 2*/
+#ht table.relation { margin:10px auto 0px auto; width:800px;}
+#ht table.relation td {background-color: #F0F0F0; border: 1px solid #CCCCCC; text-align: center; padding:2px;}
+#ht table.relation th.hd {background-color: #DCE8E0; font-weight: bold; padding: 25px 5px; font-size:1.7em; color:#d22222; width:40%;}
+#ht table.relation td select {margin:20px 2px;}
+#ht table.relation td #wynik { margin:20px 15px;}
+#ht table.relation td label {text-align:left; margin:3px;display:block;padding:0.5em;padding-left:32px;background-position:8px;background-repeat:no-repeat;border:1px solid #CCC;clear:both;cursor:pointer}
+#ht table.relation td .checked {background-color:#FFF;background-image:url(chk_on.png)}
+#ht table.relation td .unchecked {background-color:#666;background-image:url(chk_off.png);color:#FFF;}
+
+#ht #my_team { float:left; background :  url(big-logo.png) 0 0 no-repeat; width:400px; height: 200px; margin-left:50px;}
+#ht #in {float: right;margin-right:300px;}
+
+/* for clear floods */
+#ht #clr { clear: both; }
+
+/* select season and select round playoff */
+#ht .selsez  {width:100%; width:400px; margin:20px auto; text-align:center; background-color:#F0F0F0; padding:25px 10px; border: 1px solid #0B55C4;}
+#ht .selsez select { width:150px; padding: 2px; margin-bottom: 10px;}
+#ht .selsez {font-size: 13px;}
+
+/*Leters for filters*/
+#ht .headABC { width: 100%; text-align: center; padding:10px}
+#ht .headABC  a {font-size:120%; padding:2px 5px; margin:5px 1px ;background-color: #F9F9F9; border: 1px solid #BBBBBB;}
+#ht .headABC  a:hover {background-color: #9EA800;border: 1px solid #FFF; }
+#ht .headABC button, .headABC select {margin: 0px 5px;}
+
+/*tableshort for raports 13456*/
+#ht .tabshort{margin:20px auto}
+#ht table.tabshort{border-spacing:1px;background-color:#e7e7e7;color:#666}
+#ht table.tabshort td,#ht table.tabshort th{padding:5px 10px}
+#ht table.tabshort thead th{text-align:center;background:#f0f0f0;color:#666;border-bottom:1px solid #999;border-left:1px solid #fff}
+#ht table.tabshort thead a:hover { text-decoration: none; }
+#ht table.tabshort thead th img { vertical-align: middle; }
+#ht table.tabshort tbody th { font-weight: bold; }
+#ht table.tabshort tbody tr	{ background-color: #fff;  text-align: left; }
+#ht table.tabshort tbody tr td {background: #fff; border: 1px solid #fff; text-align: center; }
+#ht table.tabshort tfoot tr { text-align: center;  color: #333; }
+#ht table.tabshort tfoot td, table.tabshort tfoot th { background-color: #f3f3f3; border-top: 1px solid #999; text-align: center; }
+#ht table.tabshort input {text-align: center}
+
+/* page report1 don't update match  */
+#ht #dnot{font-size:15px;color:#ff0;background-color:#c03;font-weight:700;border:1px solid #000;text-align:center;margin:20px auto;padding:10px}
+/* foot  finfo for many page*/
+#ht #finfo {margin:5px; padding:5px 20px;border: 1px solid #CCC; background-color: #FFF}
+#ht #finfo span { padding: 5px; }
+#ht #finfo span b {color: #F00;}
+
+/*autocomplet in penalty players for raport 4*/
+ul.autocompleter-choices{position:absolute;list-style:none;border:1px solid #7c7c7c;border-left-color:#c3c3c3;border-right-color:#c3c3c3;border-bottom-color:#ddd;text-align:left;font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;z-index:50;background-color:#fff;margin:0;padding:0}
+ul.autocompleter-choices li{position:relative;display:block;float:none!important;cursor:pointer;font-weight:400;white-space:nowrap;font-size:1em;line-height:1.5em;margin:-2px 0 0;padding:.2em 1.5em .2em 1em}
+ul.autocompleter-choices li.autocompleter-selected{background-color:#444;color:#fff}
+ul.autocompleter-choices span.autocompleter-queried{display:inline;float:none;font-weight:700;margin:0;padding:0}
+ul.autocompleter-choices li.autocompleter-selected span.autocompleter-queried{color:#9FCFFF}
+.demo-info{position:absolute;top:0;right:4px;font-size:.9em;color:#888;padding:1px 2px}
+input.autocompleter-loading{background-image:url(spinner.gif);background-repeat:no-repeat;background-position:right 50%}
