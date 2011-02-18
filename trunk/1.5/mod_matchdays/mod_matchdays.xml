@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5">
+    <name>Matchdays</name>
+    <author>Klich Jarosław</author>
+    <creationDate>September 2010</creationDate>
+    <copyright>Klich Jarosław</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>Jarek.koko+HockeyTeam@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>Module Version 1.00</version>
+    <description>Info about matchdays</description>
+    <files>
+        <filename module="mod_matchdays">mod_matchdays.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <params>
+        <param name="sez" type="sql" default="" label="Select regular season"  query="SELECT id AS value, nazwa AS sez FROM #__hockey_system ORDER BY id DESC" />
+        <param name="id" type="text" default="" label="Current matchday" description="Current matchday" />
+        <param name="sname" type="list" default="0" label="Short team name" description="Show short team name">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+        <param name="title" type="text" default="Matchday" label="Title name" description="Title name" />
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    </params>
+</install>

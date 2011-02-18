@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="Players Team">
+		<message>
+			<![CDATA[Players Team]]>
+		</message>
+	</layout>
+	<state>
+		<name>Players Team</name>
+		<description>Info about players</description>
+	</state>
+</metadata>

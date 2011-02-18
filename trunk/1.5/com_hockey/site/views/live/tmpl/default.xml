@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <layout title="Live match">
+        <message>
+	<![CDATA[Live match]]>
+        </message>
+    </layout>
+    <state>
+        <name>Live</name>
+        <description>Live match</description>
+        <params>
+            <param name="id_match" type="text" default="0" label="ID match" description="ID match" />
+            <param name="time" type="text" default="6" label="Time in seconds" description="Auto refresh a webpage at regular interval" />
+            <param name="message1" type="text" default="No match" label="Message before or after the match" description="Message before or after the match" />
+            <param name="end" type="radio" default="0" label="End of the match" description="Select yes ,if match is finished">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </param>
+        </params>
+    </state>
+</metadata>
