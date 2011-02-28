@@ -128,6 +128,7 @@ $document->addScript("../administrator/components/com_hockey/assets/validate.js"
                 </td>
 
             </tr>
+            <?php if (($this->infoSP['dogr'] == "T") || ($this->type != 0)) { ?>
             <tr id="ot">
                 <td><?php echo JText::_('HOC_OT'); ?></td>
                 <td>
@@ -136,6 +137,7 @@ $document->addScript("../administrator/components/com_hockey/assets/validate.js"
                     <input type="text" name="w2ot" value="<?php echo $this->row->w2ot; ?>" size="2" maxlength="2" class="validate-numeric" />
                 </td>
             </tr>
+           <?php } if (($this->infoSP['karne'] == "T") || ($this->type != 0)) { ?>
             <tr id="so">
                 <td><?php echo JText::_('HOC_SO'); ?></td>
                 <td>
@@ -144,6 +146,7 @@ $document->addScript("../administrator/components/com_hockey/assets/validate.js"
                     <input type="text" name="w2so" value="<?php echo $this->row->w2so; ?>" size="2" maxlength="2" class="validate-numeric" />
                 </td>
             </tr>
+           <?php } ?>
         </tbody>
         <tfoot>
             <tr>

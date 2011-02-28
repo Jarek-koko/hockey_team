@@ -200,22 +200,22 @@ CREATE TABLE IF NOT EXISTS `#__hockey_teams` (
 
 
 ALTER TABLE `#__hockey_match`
-  ADD CONSTRAINT `FK_#__hockey_match` FOREIGN KEY (`id_system`) REFERENCES `#__hockey_system` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `FK_#__hockey_match` FOREIGN KEY (`id_system`) REFERENCES `#__hockey_system` (`id`) ON DELETE CASCADE;
 
 ALTER TABLE `#__hockey_match_goalie`
-  ADD CONSTRAINT `FK_#__hockey_match_goalie` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `FK_#__hockey_match_goalie` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE;
 
 ALTER TABLE `#__hockey_match_goals`
-  ADD CONSTRAINT `FK_#__hockey_match_goals` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `FK_#__hockey_match_goals` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE;
 
 ALTER TABLE `#__hockey_match_penalty`
-  ADD CONSTRAINT `FK_#__hockey_match_penalty` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `FK_#__hockey_match_penalty` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE;
 
 ALTER TABLE `#__hockey_match_players`
-  ADD CONSTRAINT `FK_#__hockey_players_in_match` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `FK_#__hockey_players_in_match` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE;
 
 ALTER TABLE `#__hockey_match_rapport`
-  ADD CONSTRAINT `FK_#__hockey_match_rapport` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `FK_#__hockey_match_rapport` FOREIGN KEY (`id_match`) REFERENCES `#__hockey_match` (`id`) ON DELETE CASCADE;
 
 ALTER TABLE `#__hockey_tabela`
-  ADD CONSTRAINT `FK_#__hockey_tabela` FOREIGN KEY (`id_system`) REFERENCES `#__hockey_system` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `FK_#__hockey_tabela` FOREIGN KEY (`id_system`) REFERENCES `#__hockey_system` (`id`) ON DELETE CASCADE;

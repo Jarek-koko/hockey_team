@@ -95,7 +95,7 @@ class HockeyControllerSezon extends JController {
         JRequest::checkToken() or jexit('Invalid Token');
         $model = $this->getModel('sezon');
         if ($model->delete()) {
-            $msg = JText::_('HOA_MSG_SUCESS_DELETE');
+            $msg = JText::_('HOC_HOA_MSG_SUCESS_DELETE');
             $type = 'message';
         } else {
             $msg = $model->getError();
@@ -110,7 +110,7 @@ class HockeyControllerSezon extends JController {
         JRequest::checkToken() or jexit('Invalid Token');
         $model = $this->getModel('sezon');
         if ($model->update()) {
-            $msg = JText::_('HOA_MSG_UPDATE_SEASON');
+            $msg = JText::_('HOC_HOA_MSG_UPDATE_SEASON');
             $type = 'message';
         } else {
             $msg = $model->getError();
