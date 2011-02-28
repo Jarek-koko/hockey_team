@@ -33,8 +33,10 @@ class HockeyViewSezon extends JView {
     }
 
     function _displayEdit($tpl = null) {
-        $option = JRequest::getCmd('option'); 
-   
+
+        $document = & JFactory::getDocument ();
+        $document->addScript(JURI::root(true)."/administrator/components/com_hockey/assets/validate.js");
+        $option = JRequest::getCmd('option');
         $model2 = &$this->getModel('sezon');
         $row = $model2->getSezon();
 
@@ -69,8 +71,9 @@ class HockeyViewSezon extends JView {
 
    
     function _displayAdd($tpl = null) {
+        $document = & JFactory::getDocument ();
+        $document->addScript(JURI::root(true)."/administrator/components/com_hockey/assets/validate.js");
         $option = JRequest::getCmd('option');
-
         //models/teams
         $model = &$this->getModel('teams');
         $kluby = $teams = $model->getAllTeamsArray();

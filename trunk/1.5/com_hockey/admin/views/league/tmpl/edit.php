@@ -11,8 +11,6 @@
 
 defined('_JEXEC') or die('Restricted access');
 JHTML::_ ( 'behavior.calendar' );
-$document = & JFactory::getDocument ();
-$document->addScript("../administrator/components/com_hockey/assets/validate.js");
 ?>
 <script type="text/javascript">
     //<![CDATA[

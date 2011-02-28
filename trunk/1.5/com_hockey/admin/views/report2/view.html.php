@@ -18,6 +18,8 @@ class HockeyViewReport2 extends JView {
 
     function display($tpl = null) {
 
+        $document = & JFactory::getDocument ();
+        $document->addScript(JURI::root(true)."/administrator/components/com_hockey/assets/moocheck.js");
         $id_match = (int) JRequest::getVar('id_match', 0, 'get', 'INT');
         $this->_type = (int) JRequest::getVar('type', 5, '', 'INT');
         $option = JRequest::getCmd('option');

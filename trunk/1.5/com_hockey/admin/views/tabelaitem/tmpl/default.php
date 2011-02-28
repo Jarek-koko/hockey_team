@@ -9,8 +9,6 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 defined('_JEXEC') or die('Restricted access');
-$document = & JFactory::getDocument ();
-$document->addScript("../administrator/components/com_hockey/assets/validate.js");
 JHTML::_('behavior.calendar');
 ?>
 <script type="text/javascript">

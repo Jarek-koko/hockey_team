@@ -83,22 +83,22 @@ defined('_JEXEC') or die('Restricted access');
                     <td><?php echo $row->druzyna1 ?></td>
                     <td><?php echo ($row->wynik_1 == null ? "--" : $row->wynik_1); ?> : <?php echo ($row->wynik_2 == null ? "--" : $row->wynik_2); ?></td>
                     <td><?php echo $row->druzyna2; ?></td>
-                    <td><a href="<?php echo $link; ?>"><img src="components/com_hockey/assets/add.png" alt="edit" /></a></td>
+                    <td><a href="<?php echo $link; ?>"><img src="<?php echo JURI::root(true);?>/administrator/components/com_hockey/assets/add.png" alt="edit" /></a></td>
                 <?php
                 if (($row->idteam1 == $this->myteam) or ($row->idteam2 == $this->myteam)) {
-                    echo '<td><a href="' . $link1 . '"><img src="components/com_hockey/assets/add.png" alt="edit" /></a></td>
-                           <td><a href="' . $link2 . '"><img src="components/com_hockey/assets/add.png" alt="edit" /></a></td>
-                           <td><a href="' . $link3 . '"><img src="components/com_hockey/assets/add.png" alt="edit" /></a></td>
-                           <td><a href="' . $link4 . '"><img src="components/com_hockey/assets/add.png" alt="edit" /></a></td>
-                           <td><a href="' . $link5 . '"><img src="components/com_hockey/assets/add.png" alt="edit" /></a></td>
-                           <td><a href="' . $link6 . '"><img src="components/com_hockey/assets/add.png" alt="edit" /></a></td>';
+                    echo '<td><a href="' . $link1 . '"><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/add.png" alt="edit" /></a></td>
+                           <td><a href="' . $link2 . '"><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/add.png" alt="edit" /></a></td>
+                           <td><a href="' . $link3 . '"><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/add.png" alt="edit" /></a></td>
+                           <td><a href="' . $link4 . '"><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/add.png" alt="edit" /></a></td>
+                           <td><a href="' . $link5 . '"><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/add.png" alt="edit" /></a></td>
+                           <td><a href="' . $link6 . '"><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/add.png" alt="edit" /></a></td>';
                 } else {
-                    echo '<td><img src="components/com_hockey/assets/no.png" alt="no" /></td>
-                          <td><img src="components/com_hockey/assets/no.png" alt="no" /></td>
-                          <td><img src="components/com_hockey/assets/no.png" alt="no" /></td>
-                          <td><img src="components/com_hockey/assets/no.png" alt="no" /></td>
-                          <td><img src="components/com_hockey/assets/no.png" alt="no" /></td>
-                          <td><img src="components/com_hockey/assets/no.png" alt="no" /></td>';
+                    echo '<td><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/no.png" alt="no" /></td>
+                          <td><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/no.png" alt="no" /></td>
+                          <td><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/no.png" alt="no" /></td>
+                          <td><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/no.png" alt="no" /></td>
+                          <td><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/no.png" alt="no" /></td>
+                          <td><img src="'.JURI::root(true).'/administrator/components/com_hockey/assets/no.png" alt="no" /></td>';
                 }
                 ?>
                 <td><?php echo $published; ?></td>

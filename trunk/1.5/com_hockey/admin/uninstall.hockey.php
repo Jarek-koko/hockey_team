@@ -8,7 +8,7 @@
  * @copyright Copyright (C) Klich Jarosław
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
-// no direct access
+
 defined( '_JEXEC' ) or die( 'Restricted access' );
 function  com_uninstall(){
 ?>

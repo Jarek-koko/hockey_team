@@ -33,6 +33,8 @@ class HockeyViewLeagueday extends JView {
 
     function _displayAdd($tpl = null) {
 
+        $document = & JFactory::getDocument ();
+        $document->addScript(JURI::root(true)."/administrator/components/com_hockey/assets/validate.js");
         $uri = & JFactory::getURI();
         $option = JRequest::getCmd('option');
         $mainframe = &JFactory::getApplication();
@@ -64,6 +66,8 @@ class HockeyViewLeagueday extends JView {
 
     function _displayAddNext($tpl = null) {
 
+        $document = & JFactory::getDocument ();
+        $document->addScript(JURI::root(true)."/administrator/components/com_hockey/assets/validate.js");
         $uri = & JFactory::getURI();
         $option = JRequest::getCmd('option');
         $mainframe = &JFactory::getApplication();

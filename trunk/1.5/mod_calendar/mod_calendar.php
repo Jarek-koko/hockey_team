@@ -4,7 +4,7 @@
  * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
  *
- * @module Hockey Team -Calendar
+ * @module Hockey Team - Calendar
  * @copyright Copyright (C) Klich Jarosław
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
@@ -20,9 +20,9 @@ $uri            =& JFactory::getURI();
 $config         =& JFactory::getConfig();
 $tzoffset       = $config->getValue('config.offset');
 $time           = time()  + ($tzoffset*60*60);
-$today_month    = 1;//date( 'm', $time);
-$today_year     = 2010;// date( 'Y', $time);
-$today          = 26; //date( 'j',$time);
+$today_month    = date( 'm', $time); //1
+$today_year     = date( 'Y', $time); //2011
+$today          = date( 'j',$time); //26
 
 $post_month 	= (int)JRequest::getVar( 'month', 0, 'post','int');
 $post_year      = (int)JRequest::getVar( 'year', 0, 'post','int');
