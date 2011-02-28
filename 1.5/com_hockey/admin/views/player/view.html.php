@@ -18,8 +18,11 @@ require_once (JPATH_COMPONENT . DS . 'helpers' . DS . 'position.php');
 class HockeyViewPlayer extends JView {
 
     function display($tpl = null) {
+
+        $document = & JFactory::getDocument ();
+        $document->addScript(JURI::root(true)."/administrator/components/com_hockey/assets/validate.js");
+
         $option = JRequest::getCmd('option');
-        
         $model = $this->getModel('players');
         $items = $model->getPlayer();
 
@@ -41,9 +44,9 @@ class HockeyViewPlayer extends JView {
             $lists ['foto'] = JHTML::_('list.images', 'foto', $items->foto, $javascript, $directory);
         }
 
-        // tworzenie tablicy pozycji zawodnika
+        // get position players from static helpers
         $pozycja = HockeyHelperPosition::getPositionSelect();
-        // tworzenie selectu //pozycja// i wyboru na stronie //tak nie//
+        // create select position and yes or not
         $lists ['pozycja'] = JHTML::_('select.genericList', $pozycja, 'pozycja', 'class="inputbox"' . '', 'value', 'text', $items->pozycja);
         $lists ['published'] = JHTML::_('select.booleanlist', 'published', 'class="inputbox"', $items->published);
 

@@ -15,8 +15,11 @@ jimport('joomla.application.component.view');
 class HockeyViewReferee extends JView {
 
     function display($tpl = null) {
-        $option = JRequest::getCmd('option');
 
+        $document = & JFactory::getDocument ();
+        $document->addScript(JURI::root(true)."/administrator/components/com_hockey/assets/validate.js");
+
+        $option = JRequest::getCmd('option');
         $model = $this->getModel('referees');
         $items = $model->getReferee();
 

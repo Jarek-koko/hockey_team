@@ -53,6 +53,9 @@ class HockeyViewPlayoff extends JView {
     }
 
     function _displayEdit($tpl = null) {
+
+        $document = & JFactory::getDocument ();
+        $document->addScript(JURI::root(true)."/administrator/components/com_hockey/assets/validate.js");
         $option = JRequest::getCmd('option');
         $mainframe = &JFactory::getApplication();
         $sez = HockeyHelperSelectSeason::SelSez();
@@ -60,8 +63,6 @@ class HockeyViewPlayoff extends JView {
         $kolejka_nr = JRequest::getVar('kol', 0, 'post', 'INT');
         $cid = JRequest::getVar('cid', array(0), '', 'array');
         JArrayHelper::toInteger($cid, array(0));
-
-
         $task = JRequest::getCmd('task');
 
         // ================= add ===========================================

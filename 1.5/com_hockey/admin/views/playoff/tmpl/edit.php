@@ -11,8 +11,6 @@
 
 defined('_JEXEC') or die('Restricted access');
 JHTML::_('behavior.calendar');
-$document = & JFactory::getDocument ();
-$document->addScript("../administrator/components/com_hockey/assets/validate.js");
 $params = &JComponentHelper::getParams($this->option);
 $options = array();
 for ($i = 1; $i < 10; $i++) {

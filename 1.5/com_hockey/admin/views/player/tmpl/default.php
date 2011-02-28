@@ -10,16 +10,14 @@
  */
 defined('_JEXEC') or die('Restricted access');
 JHTML::_('behavior.calendar');
-$document = & JFactory::getDocument ();
-$document->addScript("../administrator/components/com_hockey/assets/validate.js");
 ?>
 <script type="text/javascript">
     //<![CDATA[
     function changeDisplayImage() {
         if (document.adminForm.foto.value !='') {
-            document.adminForm.imagelib.src='../images/hockey/players/' + document.adminForm.foto.value;
+            document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/hockey/players/' + document.adminForm.foto.value;
         } else {
-            document.adminForm.imagelib.src='../images/hockey/players/brak.gif';
+            document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/hockey/players/brak.gif';
         }
     }
     function submitbutton(pressbutton){
@@ -58,9 +56,9 @@ $document->addScript("../administrator/components/com_hockey/assets/validate.js"
                 <td rowspan="10" colspan="2" align="center">
                     <?php
                     if (eregi("gif|jpg|png", $this->items->foto)) {
-                        echo '<img src="../images/hockey/players/' . $this->items->foto . '" name="imagelib" />';
+                        echo '<img src="'.JURI::root(true).'/images/hockey/players/' . $this->items->foto . '" name="imagelib" />';
                     } else {
-                        echo '<img src="../images/hockey/players/brak.gif" name="imagelib" />';
+                        echo '<img src="'.JURI::root(true).'/images/hockey/players/brak.gif" name="imagelib" />';
                     }
                     ?></td>
             </tr>

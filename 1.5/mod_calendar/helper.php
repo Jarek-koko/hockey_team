@@ -4,7 +4,7 @@
  * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
  *
- * @module Hockey Team -Calendar
+ * @module Hockey Team - Calendar
  * @copyright Copyright (C) Klich Jarosław
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */

@@ -17,8 +17,9 @@ require_once (JPATH_COMPONENT . DS . 'helpers' . DS . 'position.php');
 class HockeyViewTeam extends JView {
 
     function display($tpl = null) {
+        $document = & JFactory::getDocument ();
+        $document->addScript(JURI::root(true)."/administrator/components/com_hockey/assets/validate.js");
         $option = JRequest::getCmd('option');
-
         $model = $this->getModel('teams');
         $items = $model->getTeam();
         $lists = array();

@@ -12,7 +12,7 @@ defined ( '_JEXEC' ) or die ( 'Restricted access' );
 
 //add style 
 $document =& JFactory::getDocument();
-$document->addStyleSheet('../administrator/components/com_hockey/assets/style.css');
+$document->addStyleSheet(JURI::root(true).'/administrator/components/com_hockey/assets/style.css');
 
 // Require the base controller
 require_once (JPATH_COMPONENT.DS.'controller.php');

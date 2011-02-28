@@ -18,25 +18,25 @@ function com_install() {
     <div>
         <b><p>Installation Status :</p></b>
     <?php
-    if ($direxists[] = JFolder::exists(JPATH_SITE . '/images/hockey')) {
+    if ($direxists[] = JFolder::exists(JPATH_SITE.DS.'images'.DS.'hockey')) {
         echo '<p><b><span style="color:green;">FINISHED : - </span></b> Directory created - /images/hockey</p>';
     } else {
         echo '<p><b><span style="color:red;">Note : - </span></b> Directory not created. - /images/hockey </p>';
     }
 
-    if ($direxists[] = JFolder::exists(JPATH_SITE . '/images/hockey/numbers')) {
+    if ($direxists[] = JFolder::exists(JPATH_SITE.DS.'images'.DS.'hockey'.DS.'numbers')) {
         echo '<p><b><span style="color:green;">FINISHED : - </span></b> Directory created - /images/hockey/numbers</p>';
     } else {
         echo '<p><b><span style="color:red;">Note : - </span></b> Directory not created - /images/hockey/numbers</p>';
     }
 
-    if ($direxists[] = JFolder::exists(JPATH_SITE . '/images/hockey/players')) {
+    if ($direxists[] = JFolder::exists(JPATH_SITE.DS.'images'.DS.'hockey'.DS.'players')) {
         echo '<p><b><span style="color:green;">FINISHED : - </span></b> Directory created - /images/hockey/players</p>';
     } else {
         echo '<p><b><span style="color:red;">Note : - </span></b> Directory not created - /images/hockey/players</p>';
     }
 
-    if ($direxists[] = JFolder::exists(JPATH_SITE . '/images/hockey/teams')) {
+    if ($direxists[] = JFolder::exists(JPATH_SITE.DS.'images'.DS.'hockey'.DS.'teams')) {
         echo '<p><b><span style="color:green;">FINISHED : - </span></b> Directory created - /images/hockey/teams</p>';
     } else {
         echo '<p><b><span style="color:red;">Note : - </span></b> Directory not created - /images/hockey/teams</p>';

@@ -10,16 +10,14 @@
  */
 defined('_JEXEC') or die('Restricted access');
 JHTML::_('behavior.calendar');
-$document = & JFactory::getDocument ();
-$document->addScript("../administrator/components/com_hockey/assets/validate.js");
 ?>
 <script type="text/javascript">
     //<![CDATA[
     function changeDisplayImage() {
         if (document.adminForm.logo.value !='') {
-            document.adminForm.imagelib.src='../images/hockey/teams/' + document.adminForm.logo.value;
+            document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/hockey/teams/' + document.adminForm.logo.value;
         } else {
-            document.adminForm.imagelib.src='images/blank.png';
+            document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/blank.png';
         }
     }
 
@@ -60,9 +58,9 @@ $document->addScript("../administrator/components/com_hockey/assets/validate.js"
                     <td rowspan="4" colspan="2" align="center">
                         <?php
                         if (eregi("gif|jpg|png", $this->items->logo)) {
-                            echo '<img src="../images/hockey/teams/' . $this->items->logo . '" name="imagelib" />';
+                            echo '<img src="'.JURI::root(true).'/images/hockey/teams/' . $this->items->logo . '" name="imagelib" />';
                         } else {
-                            echo '<img src="images/blank.png" name="imagelib" />';
+                            echo '<img src="'.JURI::root(true).'/images/blank.png" name="imagelib" />';
                         }
                         ?></td>
                 </tr>
