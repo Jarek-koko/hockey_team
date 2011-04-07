@@ -16,7 +16,6 @@ class HockeyViewReports extends JView {
 
     function display($tpl = null) {
        
-        $uri = & JFactory::getURI();
         $document = & JFactory::getDocument();
         $mainframe = &JFactory::getApplication();
 
@@ -51,8 +50,8 @@ class HockeyViewReports extends JView {
                 $name_season = $sezony[$a]->text;
             }
         }
-        $lista = JHTML::_('select.genericlist', $sezony, 'sezon', 'class="inputbox" size="1" ', 'value', 'text', $model->_idsezon);
-        $select_season = JHTML::_('Selectseason.getSelect', $lista, $menu->query['view'], $uri->toString());
+        $lista = JHTML::_('select.genericlist', $sezony, 'sezon', 'class="inputbox" size="1" ', 'value', 'text', $model->getSezon());
+        $select_season = JHTML::_('Selectseason.getSelect', $lista, $menu->query['view'], JRoute::_('index.php?option=com_hockey&task=querypost'));
 
         $this->assignRef('rows', $rows);
         $this->assignRef('params', $params);

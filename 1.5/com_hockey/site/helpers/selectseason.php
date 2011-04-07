@@ -11,17 +11,14 @@
 defined ( '_JEXEC' ) or die ( 'Restricted access' );
 
 class JHTMLSelectseason {
-    function getSelect($lista , $view, $action) {
+    function getSelect($lista , $page, $action) {
 
         $html = '<div id="wybor">
                 <form action="'.$action.'" method="post" name="searchForm" >
                 <fieldset>
                 <legend>'.JText::_('HOC_SELECT_SEASON').'</legend>
                 <div id="selsez">'.$lista.'<input name="ok" value="'.JText::_('HOC_GO').'" class="colguzik" type="submit" /></div>
-                </fieldset>
-                <input type="hidden" name="task"   value="display" />
-                <input type="hidden" name="option"  value="com_hockey" />
-                <input type="hidden" name="view" value="'.$view.'" />
+                </fieldset><input type="hidden" name="page" value="'.$page.'" />
                 </form></div>';
         return $html;
     }

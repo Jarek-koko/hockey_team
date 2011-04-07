@@ -31,7 +31,5 @@ defined('_JEXEC') or die('Restricted access');
             </tbody>
         </table>
     </fieldset>
-    <input type="hidden" name="task"   value="display" />
-    <input type="hidden" name="option"  value="com_hockey" />
 </form>
 </div>

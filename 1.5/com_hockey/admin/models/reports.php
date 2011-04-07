@@ -331,6 +331,7 @@ class HockeyModelReports extends JModel {
             $obj = new stdClass();
             $obj->id = $id;
             $obj->text = $text;
+            $obj->id_match = $id_match;
 
             if ($id) {
                 $ret = $db->updateObject('#__hockey_match_rapport', $obj, 'id', false);

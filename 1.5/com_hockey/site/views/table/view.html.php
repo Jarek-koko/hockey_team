@@ -16,7 +16,6 @@ class HockeyViewTable extends JView {
 
     function display($tpl = null) {
 
-        $uri = & JFactory::getURI();
         $document = & JFactory::getDocument();
         $mainframe = &JFactory::getApplication();
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.js');
@@ -45,9 +44,9 @@ class HockeyViewTable extends JView {
         // get season for select
         $sezony = $model->getSezonList();
 
-        $lista = JHTML::_('select.genericlist', $sezony, 'sezon', 'class="inputbox" ', 'value', 'text', $model->_idsezon);
+        $lista = JHTML::_('select.genericlist', $sezony, 'sezon', 'class="inputbox" ', 'value', 'text', $model->getSezon());
         // helper selectseason
-        $select_season = JHTML::_('Selectseason.getSelect', $lista, $menu->query['view'], $uri->toString());
+        $select_season = JHTML::_('Selectseason.getSelect', $lista, $menu->query['view'], JRoute::_('index.php?option=com_hockey&task=querypost'));
         $infosezon = $model->getInfoSezon();
 
         $this->assignRef('list', $list);

@@ -18,7 +18,8 @@ class HockeyModelTable extends JModel {
 
     function __construct() {
         parent::__construct ();
-        $this->_idsezon = (int) JRequest::getVar('sezon', 0, 'post', 'int');
+        $session = &JFactory::getSession();
+        $this->_idsezon = (int) $session->get('idsezon', 0);
     }
 
     function getData() {
@@ -42,6 +43,10 @@ class HockeyModelTable extends JModel {
         if ($this->_idsezon == 0) {
             $this->_idsezon = $idsezon;
         }
+    }
+
+    function getSezon(){
+        return $this->_idsezon;
     }
 
     function getSezonList() {

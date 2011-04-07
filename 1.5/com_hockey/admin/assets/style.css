@@ -39,7 +39,7 @@
 #ht table.relation td .checked {background-color:#FFF;background-image:url(chk_on.png)}
 #ht table.relation td .unchecked {background-color:#666;background-image:url(chk_off.png);color:#FFF;}
 
-#ht #my_team { float:left; background :  url(big-logo.png) 0 0 no-repeat; width:400px; height: 200px; margin-left:50px;}
+#ht #my_team { float:left; background :  url(big-logo.png) 0 0 no-repeat; width:400px; height: 200px; margin-left:10px;}
 #ht #in {float: right;margin-right:300px;}
 
 /* for clear floods */

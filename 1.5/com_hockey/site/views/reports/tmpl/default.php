@@ -43,13 +43,26 @@ if ($this->rows) {
         <tr>
             <td><?php echo JHTML::_('date', $row->data, JText::_('DATE_FORMAT_LC4')) ?></td>
             <td><?php echo $row->druzyna1; ?></td>
-            <td><?php echo ($row->wynik_1 != null ? $row->wynik_1 : '-');  echo ' : '; echo ($row->wynik_2 != null ? $row->wynik_2 : '-'); ?></td>
+            <td><?php 
+            echo ($row->wynik_1 != null ? $row->wynik_1 : '-');
+            echo ' : ';
+            echo ($row->wynik_2 != null ? $row->wynik_2 : '-');
+            echo '<span class="smp">(';
+            echo ($row->w1p1 != null ? $row->w1p1 : '-').':'
+             .($row->w2p1 != null ? $row->w2p1 : '-').', '
+             .($row->w1p2 != null ? $row->w1p2 : '-').':'
+             .($row->w2p2 != null ? $row->w2p2 : '-').', '
+             .($row->w1p3 != null ? $row->w1p3 : '-').':'
+             .($row->w2p3 != null ? $row->w2p3 : '-');
+            echo ')</span>';
+            ?>
+            </td>
             <td><?php echo $row->druzyna2; ?></td>
             <td><a href="<?php echo JRoute::_('index.php?option=com_hockey&view=report&id=' . $row->id) ?>" >
-                    <img src="<?php echo JURI::base(true) ?>/components/com_hockey/assets/plik.png" alt="<?php echo JText::_('HOC_RAPORT') ?>" /></a>
+                <img src="<?php echo JURI::base(true) ?>/components/com_hockey/assets/plik.png" alt="<?php echo JText::_('HOC_RAPORT') ?>" /></a>
             </td>
         </tr>
-<?php
+        <?php
         if (is_object($kow)) {
             if (($kow->type != $row->type)) {
                 echo '</tbody></table>';

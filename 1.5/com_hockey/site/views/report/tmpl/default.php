@@ -39,11 +39,11 @@ $path2 = 'images/hockey/teams/';
             </div>
             <div class="showter">
             <?php 
-                  if ($this->list['w1p1'] != null ) echo '('.$this->list['w1p1'].':'.$this->list['w2p1'].', '.$this->list['w1p2'].':'.$this->list['w2p2'].', '.$this->list['w1p3'].':'.$this->list['w2p3'].')';
-                  if ($this->list['w1ot'] != null || $this->list['w2ot'] != null ) echo '<br />'.JText::_('HOC_OVERTIME').' - ('.$this->list['w1ot'].':'.$this->list['w2ot'].')';
-                  if ($this->list['w1so'] != null || $this->list['w2so'] != null ) echo '<br />'.JText::_('HOC_SHOUTOUTS').' - ('.$this->list['w1so'].':'.$this->list['w2so'].')';
+              if ($this->list['w1p1'] != null ) echo '('.$this->list['w1p1'].':'.$this->list['w2p1'].', '.$this->list['w1p2'].':'.$this->list['w2p2'].', '.$this->list['w1p3'].':'.$this->list['w2p3'].')';
+              if ($this->list['w1ot'] != null || $this->list['w2ot'] != null ) echo '<br />'.JText::_('HOC_OVERTIME').' - ('.$this->list['w1ot'].':'.$this->list['w2ot'].')';
+              if ($this->list['w1so'] != null || $this->list['w2so'] != null ) echo '<br />'.JText::_('HOC_SHOUTOUTS').' - ('.$this->list['w1so'].':'.$this->list['w2so'].')';
             ?></div>
         </div>
     </div>
 </div>
-
+ <div><?php echo $this->buttonback ?></div>

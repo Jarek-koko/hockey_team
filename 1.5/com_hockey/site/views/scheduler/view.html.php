@@ -12,21 +12,25 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.application.component.view');
 JHTML::addIncludePath(JPATH_COMPONENT . DS . 'helpers');
 
-class HockeyViewSchedule extends JView {
+class HockeyViewScheduler extends JView {
 
     function display($tpl = null) {
-      
         $mainframe = &JFactory::getApplication();
         $document = & JFactory::getDocument();
-        $model = &$this->getModel();
+        $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.js');
         $params = &$mainframe->getPageParameters();
-
+        $model = &$this->getModel();
         $model->setSezon($params->get('iddsfp'));
+
+        // list matchday
+        $list = $model->getListMatchday();
+        // list matches in matchday
+        $rows = $model->getListMatches();
 
         $menus = &JSite::getMenu();
         $menu = $menus->getActive();
 
-        $title =  JText::_('HOC_SCHEDULEALL_TITLE');
+        $title =  JText::_('HOC_SCHEDULER_TITLE');
         if (is_object($menu)) {
             $menu_params = new JParameter($menu->params);
             if (!$menu_params->get('page_title'))
@@ -36,6 +40,7 @@ class HockeyViewSchedule extends JView {
         }
         $document->setTitle($params->get('page_title'));
 
+        // list season
         $sezony = $model->getData();
         $nr = count($sezony);
 
@@ -48,30 +53,18 @@ class HockeyViewSchedule extends JView {
                 $name_season = $sezony[$a]->text;
             }
         }
-        $rows = $model->getAllList();
-        $lista = JHTML::_('select.genericlist', $sezony, 'sezon', 'class="inputbox size="1" ', 'value', 'text', $model->getSezon());
 
-        $stom = array();
-        $stom[] = JHTML::_('select.option', '0', JText::_('HOC_REGULAR_SEASON_SELECT'));
-        $stom[] = JHTML::_('select.option', '1', JText::_('HOC_PLAYOFF_SELECT'));
-        $stom[] = JHTML::_('select.option', '2', JText::_('HOC_PRESEASON_SELECT'));
-        $tom = JHTML::_('select.genericlist', $stom, 'tom', 'class="inputbox" size="1" ', 'value', 'text', $model->getTom());
+        $lista = JHTML::_('select.genericlist', $sezony, 'sezon', 'class="inputbox" size="1"', 'value', 'text', $model->getSezon());
+        $select_season = JHTML::_('Selectseason.getSelect', $lista, $menu->query['view'], JRoute::_('index.php?option=com_hockey&task=querypost'));
 
-        $re = array();
-        $re[] = JHTML::_('select.option', '0', JText::_('HOC_ALL_GAMES'));
-        $re[] = JHTML::_('select.option', '1', JText::_('HOC_HOME_GAMES'));
-        $re[] = JHTML::_('select.option', '2', JText::_('HOC_AWAY_GAMES'));
-        $where = JHTML::_('select.genericlist', $re, 'where', 'class="inputbox" size="1" ', 'value', 'text', $model->getWhere());
-
-        $this->assignRef('tom', $tom);
-        $this->assignRef('where', $where);
+        $this->assignRef('list', $list);
         $this->assignRef('rows', $rows);
-        $this->assignRef('idsezon', $model->getSezon());
+        $this->assignRef('matchday',$model->getMatchday());
         $this->assignRef('params', $params);
+        $this->assignRef('action', JRoute::_('index.php?option=com_hockey&task=querypost2'));
         $this->assignRef('name_season', $name_season);
-        $this->assignRef('lista', $lista);
-        $this->assignRef('action',JRoute::_('index.php?option=com_hockey&task=querypost3'));
-        parent::display($tpl);  
+        $this->assignRef('select_season', $select_season);
+        parent::display($tpl);      
     }
 }
 ?>

@@ -60,7 +60,7 @@ class HockeyModelStats extends JModel {
             ."INNER JOIN #__hockey_system S ON (S.id =M.id_system AND  G.id_team = S.myteam ) "
             ."WHERE (M.type_of_match =".$this->_db->Quote($id)." AND G.id_player = P.id AND M.id_system=".$this->_db->Quote($sez).")),0)  AS kary "
             ."FROM #__hockey_players AS P "
-            ."WHERE ( P.published=1 ) AND (P.pozycja !=1 ) AND (P.klub=(SELECT S.myteam FROM #__hockey_system S WHERE S.id=".$this->_db->Quote($sez).")) "
+            ."WHERE (P.pozycja !=1 ) HAVING mecze <>'0' "
             ."ORDER BY punkty DESC , bramki DESC, mecze DESC";
 
         return  $this->_getList ( $query, 0, 0 );
@@ -110,7 +110,7 @@ class HockeyModelStats extends JModel {
             ."INNER JOIN #__hockey_system S ON (S.id =M.id_system AND  G.id_team = S.myteam ) "
             ."WHERE (M.type_of_match =".$this->_db->Quote($id)." AND G.id_player = P.id AND M.id_system=".$this->_db->Quote($sez).")),0)  AS kary "
             ."FROM #__hockey_players AS P "
-            ."WHERE ( P.published=1 ) AND (P.pozycja=1 ) AND (P.klub=(SELECT S.myteam FROM #__hockey_system S WHERE S.id=".$this->_db->Quote($sez).")) ";
+            ."WHERE (P.pozycja=1 ) HAVING mecze <>'0' ";
         return  $this->_getList ( $query, 0, 0 );
     }
 
