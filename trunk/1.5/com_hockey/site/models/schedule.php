@@ -16,15 +16,15 @@ class HockeyModelSchedule extends JModel {
 
     var $_list = null;
     var $_idsezon = null;
-    var $_kolejka = null;
     var $_tom = null;
     var $_where = null;
 
     function __construct() {
         parent::__construct ();
-        $this->_idsezon = (int) JRequest::getVar('sezon', 0, 'post', 'int');
-        $this->_tom = (int) JRequest::getVar('tom', 0, 'post', 'int');
-        $this->_where = (int) JRequest::getVar('where', 0, 'post', 'int');
+        $session = &JFactory::getSession();
+        $this->_idsezon = (int) $session->get('idsezon', 0);
+        $this->_tom = (int) $session->get('tom', 0);
+        $this->_where = (int) $session->get('where', 0);
     }
 
     function setSezon($idsezon) {
@@ -34,48 +34,22 @@ class HockeyModelSchedule extends JModel {
         }
     }
 
+    function getSezon() {
+        return $this->_idsezon;
+    }
+
+    function getTom() {
+        return $this->_tom;
+    }
+
+    function getWhere() {
+        return $this->_where;
+    }
+
     function getData() {
         $query = 'SELECT id AS value, nazwa AS text FROM #__hockey_system ORDER BY id DESC';
         $this->_db->setQuery($query);
         return $this->_db->loadObjectList();
-    }
-
-    function getListMatchday($i) {
-        $query = "SELECT DISTINCT id_kolejka FROM #__hockey_match WHERE id_system =" . $this->_db->Quote($this->_idsezon) 
-               . " AND type_of_match=".$this->_db->Quote($i)." AND published='1' ORDER BY id_kolejka";
-        $this->_db->setQuery($query);
-        return $this->_db->loadResultArray();
-    }
-
-    // zwraca liste kolejek w sezonie ustawionym
-    function getListMatches($nr_kol, $i) {
-        if (!$this->_list) {
-            $query = "SELECT M.id,M.data,T1.name AS druzyna1,T2.name AS druzyna2,M.wynik_1,M.wynik_2,M.m_dogr,M.m_karne, R.id as rid "
-                    . "FROM #__hockey_match M  "
-                    . "LEFT JOIN #__hockey_match_rapport R ON (R.id_match=M.id) "
-                    . "LEFT JOIN #__hockey_teams T1 ON (M.druzyna1=T1.id) "
-                    . "LEFT JOIN #__hockey_teams T2 ON (M.druzyna2=T2.id) "
-                    . "WHERE M.published='1' AND M.type_of_match=" . $this->_db->Quote($i)
-                    . " AND M.id_system=" . $this->_db->Quote($this->_idsezon) . " AND M.id_kolejka=" . $this->_db->Quote((int) $nr_kol)
-                    . " ORDER BY M.data";
-            $this->_list = $this->_getList($query, 0, 0);
-        }
-        return $this->_list;
-    }
-
-    function getListPlayoff() {
-
-        if (!$this->_list) {
-            $query = "SELECT M.id,M.data,T1.name AS druzyna1,T2.name AS druzyna2,M.wynik_1,M.wynik_2,M.m_dogr,M.m_karne ,M.id_kolejka, R.id as rid "
-                    . "FROM #__hockey_match M  "
-                    . "LEFT JOIN #__hockey_match_rapport R ON (R.id_match=M.id) "
-                    . "LEFT JOIN #__hockey_teams T1 ON (M.druzyna1=T1.id) "
-                    . "LEFT JOIN #__hockey_teams T2 ON (M.druzyna2=T2.id) "
-                    . "WHERE M.published='1' AND M.type_of_match='1' AND M.id_system=" . $this->_db->Quote($this->_idsezon)
-                    . " ORDER BY M.id_kolejka ,M.data";
-            $this->_list = $this->_getList($query, 0, 0);
-        }
-        return $this->_list;
     }
 
     function getAllList() {
@@ -86,10 +60,10 @@ class HockeyModelSchedule extends JModel {
 
             switch ($this->_where) {
                 case 2:
-                    $where = 'AND (M.druzyna2= ' . $myteam . ' ) ';
+                    $where = ' AND (M.druzyna2= ' . $myteam . ' ) ';
                     break;
                 case 1:
-                    $where = 'AND (M.druzyna1=' . $myteam . ' ) ';
+                    $where = ' AND (M.druzyna1=' . $myteam . ' ) ';
                     break;
                 default:
                     $where = ' AND (M.druzyna1=' . $myteam . ' OR M.druzyna2=' . $myteam . ' ) ';
@@ -97,22 +71,22 @@ class HockeyModelSchedule extends JModel {
             }
             switch ($this->_tom) {
                 case 2:
-                    $tom = 'AND (M.type_of_match=2) ';
+                    $tom = ' AND (M.type_of_match=2) ';
                     break;
                 case 1:
-                    $tom = 'AND (M.type_of_match=1) ';
+                    $tom = ' AND (M.type_of_match=1) ';
                     break;
                 default:
                     $tom = ' AND (M.type_of_match=0) ';
                     break;
             }
-            $query = "SELECT M.id,M.data,T1.name AS druzyna1,T2.name AS druzyna2,M.wynik_1,M.wynik_2,M.m_dogr,M.m_karne ,M.id_kolejka ,M.type_of_match ,MONTH(M.data) as mm, R.id as rid "
+            $query = "SELECT M.id,M.data,T1.name AS druzyna1,T2.name AS druzyna2,M.wynik_1,M.wynik_2,M.m_dogr,M.m_karne ,M.id_kolejka ,M.type_of_match ,MONTH(M.data) as mm, R.id as rid ,M.w1p1,M.w2p1,M.w1p2,M.w2p2,M.w1p3,M.w2p3,M.w1ot,M.w2ot,M.w1so,M.w2so "
                     . "FROM #__hockey_match M  "
                     . "LEFT JOIN #__hockey_match_rapport R ON (R.id_match=M.id) "
                     . "LEFT JOIN #__hockey_teams T1 ON (M.druzyna1=T1.id) "
                     . "LEFT JOIN #__hockey_teams T2 ON (M.druzyna2=T2.id) "
                     . "WHERE M.published='1' " . $where . " " . $tom . " AND M.id_system=" . $this->_db->Quote($this->_idsezon)
-                    . " ORDER BY M.type_of_match, M.id_kolejka ,M.data";
+                    . " ORDER BY M.type_of_match,M.data,M.id_kolejka";
             $this->_list = $this->_getList($query, 0, 0);
         }
         return $this->_list;

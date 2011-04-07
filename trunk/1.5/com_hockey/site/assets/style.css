@@ -3,7 +3,8 @@
 .bb table caption {text-align:left; padding:5px 15px; background-color:#8b0000; color:#fff; font-weight:bold}
 .bb .par{text-align:left; padding:5px 15px;  background: transparent url(../assets/headred.gif) repeat-x scroll 50% 50%; color:#fff; font-weight:bold;margin-bottom:15px}
 .bb table th{background: url("../assets/htab.png") repeat-x scroll 0 -31px transparent; border: 1px solid #c8c8c8;padding: 4px; text-align:center; }
-.bb table td{padding:3px 4px; border:1px solid #c8c8c8; text-align:center; }
+.bb table td{padding: 2px; border:1px solid #c8c8c8; text-align:center; }
+.bb table td .smp {margin: 0 0 0 15px; font-size: 0.85em;}
 .bb table .ck {text-align:left; padding:5px; background-color:#DDA; font-weight:bold;color:#777; }
 .bb .opis{border:1px solid #8b0000; padding:2px}
 .bb .opis {width:99%; margin:10px auto; }
@@ -50,12 +51,12 @@ table.kol a {padding:2px 10px;font-family:Helvetica,Arial; color:#555555;}
 .headtab div { padding:3px; font-size: 13px;}
 
 #wybor {margin: 5px 0 40px 0;}
-#wybor fieldset { background:#E6EECC;}
+#wybor fieldset { background:#E6EECC; padding: 5px; margin-top:5px;}
 #wybor legend {margin-left:15px;background:#FFF;border:1px solid #555;padding:4px; font-size: 13px}
 #wybor #selsez {text-align: center;}
 #wybor #selsez select {margin:0 10px;}
 
-table.chmatch {margin:10px auto;}
+table.chmatch {margin:2px auto;}
 
 /* tabela points */
 table.tableleague{border-spacing:1px;border-collapse:separate;background-color:#CDCDCD;font-size:11px;width:100%;text-align:center;margin:10px 0 15px}

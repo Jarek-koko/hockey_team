@@ -72,7 +72,7 @@ JHTML::_('behavior.calendar');
             </tr>
             <tr>
                 <td class="key"><?php echo JText::_('HOC_HOB_GOALS_DIFFERANCE'); ?></td>
-                <td><input class="text_area required validate-numeric" type="text" name="roznica" id="roznica" size="3" maxlength="3" value="<?php echo $this->items->roznica; ?>" /></td>
+                <td><input class="text_area required validate-numeric" type="text" name="roznica" id="roznica" size="3" maxlength="4" value="<?php echo $this->items->roznica; ?>" /></td>
             </tr>
             <tr>
                 <td class="key"><?php echo JText::_('HOC_PAGE'); ?></td>

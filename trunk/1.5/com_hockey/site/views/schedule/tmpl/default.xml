@@ -8,11 +8,5 @@
     <state>
         <name>Schedule  - All matches</name>
         <description>Schedule - All matches</description>
-        <params>
-            <param name="show_select" type="radio" default="1" label="Display Select Season" description="Show/Hide the Display Select season">
-                <option value="0">Hide</option>
-                <option value="1">Show</option>
-            </param>
-        </params>
     </state>
 </metadata>

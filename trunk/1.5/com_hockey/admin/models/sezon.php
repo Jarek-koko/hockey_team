@@ -46,7 +46,7 @@ class HockeyModelSezon extends JModel {
     function _buildQuery() {
         $query = "SELECT system.*, teams.name "
                 . "FROM #__hockey_system AS system LEFT JOIN #__hockey_teams AS teams ON (system.myteam = teams.id) "
-                . "ORDER BY teams.id ";
+                . "ORDER BY system.id ";
         return $query;
     }
 

@@ -19,6 +19,7 @@ class HockeyViewReport extends JView {
              
         $id = (int) JRequest::getVar('id', 0, 'get', 'INT');
         $tmpl =     JRequest::getVar('tmpl', '', 'get', 'string');
+        $buttonback = '<a href = "javascript:history.back()"><img src="' . JURI::base(true) . '/components/com_hockey/assets/back.jpg" alt="back" /></a>';
 
         $mainframe = &JFactory::getApplication();
         $document = & JFactory::getDocument();
@@ -30,6 +31,7 @@ class HockeyViewReport extends JView {
 
         if ($tmpl == 'component') {
             $document->addStyleSheet(JURI::base(true) . '/components/com_hockey/assets/style.css');
+            $buttonback =  '';
         }
 
         $document->addScript(JURI::base(true).'/components/com_hockey/assets/jquery.js' );
@@ -66,6 +68,7 @@ class HockeyViewReport extends JView {
             $this->assignRef('number1', $number1);
             $this->assignRef('number2', $number2);
             $this->assignRef('list', $list);
+            $this->assignRef('buttonback', $buttonback);
 
             parent::display($tpl);    // layout  default.php
             parent::display('body');  // layout  default_body.php

@@ -21,7 +21,40 @@ class HockeyController extends JController {
         $document->addStyleSheet(JURI::base(true) . '/components/com_hockey/assets/style.css');
         parent::display ();
     }
-    
+
+    // get query post from helper selectseason
+    // work white raports, table, stats, schedule-r-p,
+    function querypost() {
+       $idsezon = (int) JRequest::getVar('sezon', 0, 'post', 'int');
+       $page =  JRequest::getVar('page', 'reports', 'post', 'word');
+       $session =&JFactory::getSession();
+       $session->set('idsezon',$idsezon);
+       $session->clear('matchday');
+       $this->setRedirect(JRoute::_('index.php?option=com_hockey&view='.$page));
+    }
+
+    // get query post from square id_matchday
+    // work only white scheduler
+    function querypost2() {
+       $matchday = (int) JRequest::getVar('matchday', 0, 'post', 'int');
+       $session =&JFactory::getSession();
+       $session->set('matchday',$matchday);
+       $this->setRedirect(JRoute::_('index.php?option=com_hockey&view=scheduler'));
+    }
+
+    // get query post from schedule
+    // work only white schedule
+    function querypost3() {
+       $idsezon = (int) JRequest::getVar('sezon', 0, 'post', 'int');
+       $tom =     (int) JRequest::getVar('tom', 0, 'post', 'int');
+       $where =   (int) JRequest::getVar('where', 0, 'post', 'int');
+       $session =&JFactory::getSession();
+       $session->set('idsezon',$idsezon);
+       $session->set('tom',$tom);
+       $session->set('where', $where);
+       $this->setRedirect(JRoute::_('index.php?option=com_hockey&view=schedule'));
+    }
+
     // ajax metod for stats player
     function tabplayer() {
         //set format=raw !

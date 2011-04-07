@@ -74,7 +74,7 @@ class HockeyControllerAjax extends JController {
             $db = & JFactory::getDBO ();
             $escape = $db->getEscaped($word);
             $escape = $db->Quote($escape . '%', false);
-            $query = "SELECT note FROM #__hockey_match_penalty WHERE note LIKE " . $escape;
+            $query = "SELECT note, COUNT(*)  FROM #__hockey_match_penalty WHERE note LIKE " . $escape. " GROUP BY note ORDER BY COUNT(*) DESC";
             $db->setQuery($query);
             $data = $db->loadResultArray();
 
