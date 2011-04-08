@@ -39,7 +39,7 @@ class HockeyViewPlayer extends JView {
         $model = &$this->getModel();
         $model->setSezon($params->get('iddsfp'));
 
-        // set regular season or playof
+        // set regular season or playoff
         if (($type == 0) && ($position != 1)) {
             $regular_stat = $model->getStatplayer(0);
             echo '<div id="info" style="display:block"><table class="tabplayer">

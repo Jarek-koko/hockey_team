@@ -17,7 +17,7 @@ JHTML::_('behavior.calendar');
         if (document.adminForm.logo.value !='') {
             document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/hockey/teams/' + document.adminForm.logo.value;
         } else {
-            document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/blank.png';
+            document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/hockey/teams/nologo.png';
         }
     }
 
@@ -60,7 +60,7 @@ JHTML::_('behavior.calendar');
                         if (eregi("gif|jpg|png", $this->items->logo)) {
                             echo '<img src="'.JURI::root(true).'/images/hockey/teams/' . $this->items->logo . '" name="imagelib" />';
                         } else {
-                            echo '<img src="'.JURI::root(true).'/images/blank.png" name="imagelib" />';
+                            echo '<img src="'.JURI::root(true).'/images/hockey/teams/nologo.png" name="imagelib" />';
                         }
                         ?></td>
                 </tr>

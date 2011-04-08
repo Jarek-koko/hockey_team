@@ -143,10 +143,10 @@ defined('_JEXEC') or die('Restricted access');
         </thead>
         <tbody>
       <?php
-            for ($i = 0, $players = count($this->zawodnicy); $i < $players; $i++) {
+            for ($i=0, $j=1, $players = count($this->zawodnicy); $i < $players; $i++) {
                 if ($this->zawodnicy[$i]->id_team == $this->list ['druzyna1']) {
                     echo '<tr>';
-                    echo '<td>'.$this->zawodnicy[$i]->nr.'</td>';
+                    echo '<td>'.$j++.'</td>';
                     echo '<td>'.HockeyHelperPosition::getPositionShort((int) $this->zawodnicy[$i]->pozycja).'</td>';
                     echo '<td style="text-align:left; padding-left:5px;">'. $this->zawodnicy[$i]->nazwisko .'</td>';
                     echo '<td>'.($this->zawodnicy[$i]->bramki + $this->zawodnicy[$i]->asysta). '</td>';
@@ -172,10 +172,10 @@ defined('_JEXEC') or die('Restricted access');
         </thead>
         <tbody>
         <?php
-        for ($i = 0, $players = count($this->zawodnicy); $i < $players; $i++) {
+        for ($i=0,$j=1, $players = count($this->zawodnicy); $i < $players; $i++) {
             if ($this->zawodnicy[$i]->id_team == $this->list ['druzyna2']) {
                  echo '<tr>';
-                    echo '<td>'.$this->zawodnicy[$i]->nr.'</td>';
+                    echo '<td>'.$j++.'</td>';
                     echo '<td>'.HockeyHelperPosition::getPositionShort((int) $this->zawodnicy[$i]->pozycja).'</td>';
                     echo '<td style="text-align:left; padding-left:5px;">'. $this->zawodnicy[$i]->nazwisko .'</td>';
                     echo '<td>'.($this->zawodnicy[$i]->bramki + $this->zawodnicy[$i]->asysta). '</td>';
@@ -205,10 +205,10 @@ defined('_JEXEC') or die('Restricted access');
         </thead>
         <tbody>
       <?php
-            for ($i = 0, $goalie = count($this->goalie); $i < $goalie; $i++) {
+            for ($i=0, $j=1, $goalie = count($this->goalie); $i < $goalie; $i++) {
                 if ($this->goalie[$i]->id_team == $this->list ['druzyna1']) {
                      echo '<tr>';
-                    echo '<td>'.$this->goalie[$i]->nr.'</td>';
+                    echo '<td>'.$j++.'</td>';
                     echo '<td style="text-align:left; padding-left:5px;">'. $this->goalie[$i]->nazwisko .'</td>';
                     echo '<td>'.$this->goalie[$i]->time_p. '</td>';
                     echo '<td>'.$this->goalie[$i]->save. '</td>';
@@ -236,10 +236,10 @@ defined('_JEXEC') or die('Restricted access');
         </thead>
         <tbody>
         <?php
-        for ($i = 0, $goalie = count($this->goalie); $i < $goalie; $i++) {
+        for ($i=0, $j=1, $goalie = count($this->goalie); $i < $goalie; $i++) {
                 if ($this->goalie[$i]->id_team == $this->list ['druzyna2']) {
                     echo '<tr>';
-                    echo '<td>'.$this->goalie[$i]->nr.'</td>';
+                    echo '<td>'.$j++.'</td>';
                     echo '<td style="text-align:left; padding-left:5px;">'. $this->goalie[$i]->nazwisko .'</td>';
                     echo '<td>'.$this->goalie[$i]->time_p. '</td>';
                     echo '<td>'.$this->goalie[$i]->save. '</td>';

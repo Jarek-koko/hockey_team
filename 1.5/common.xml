@@ -59,10 +59,10 @@
             <fileset dir="${source}/images/hockey/numbers"/>
         </copy>
         <copy todir="${builddir}/${NAME}/images/teams" overwrite="true" verbose="${verbose}" failonerror="false">
-            <filelist dir="${source}/images/hockey/teams" files="non.gif" />
+            <filelist dir="${source}/images/hockey/teams" files="nologo.png" />
         </copy>
         <copy todir="${builddir}/${NAME}/images/players" overwrite="true" verbose="${verbose}" failonerror="false">
-            <filelist dir="${source}/images/hockey/players" files="brak.jpg"/>
+            <filelist dir="${source}/images/hockey/players" files="nophoto.jpg"/>
         </copy>
         <copy todir="${builddir}/${NAME}/admin" overwrite="true" verbose="${verbose}">
             <fileset dir="${source}/administrator/components/${NAME}"/>

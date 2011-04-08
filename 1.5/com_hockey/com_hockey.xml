@@ -8,7 +8,7 @@
     <copyright>Klich Jarosław</copyright>
     <creationdate>September 2010</creationdate>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <version>0.957 beta</version>
+    <version>0.95 beta</version>
     <description>Hockey Team</description>
     <install>
         <sql folder="admin/sql">
@@ -54,9 +54,9 @@
         <filename>numbers/sk.png</filename>
         <filename>numbers/ss.png</filename>
         <filename>numbers/index.html</filename>
-        <filename>teams/non.gif</filename>
+        <filename>teams/nologo.png</filename>
         <filename>teams/index.html</filename>
-        <filename>players/brak.jpg</filename>
+        <filename>players/nophoto.jpg</filename>
         <filename>players/index.html</filename>
     </media>
     <administration>
