@@ -23,7 +23,7 @@ $path2 = 'images/hockey/teams/';
                     if (JFile::exists($path2 . $this->list['logo1'])) {
                         echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . $this->list['logo1'] . '" alt="logo1" />';
                     } else {
-                        echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . 'non.gif" alt="logo1" />';
+                        echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . 'nologo.png" alt="logo1" />';
                     } ?>
                 </div>
                 <div class="scoor"><?php echo $this->number1, ($this->gnumber == 1) ? '<img src="' . JURI::base(true) . '/' . $path1 . 'sk.png" alt="" />' : ' : ', $this->number2; ?></div>
@@ -32,7 +32,7 @@ $path2 = 'images/hockey/teams/';
                     if (JFile::exists($path2 . $this->list['logo2'])) {
                         echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . $this->list['logo2'] . '" alt="logo2" />';
                     } else {
-                        echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . 'non.gif" alt="logo2" />';
+                        echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . 'nologo.png" alt="logo2" />';
                     } ?>
                 </div>
                 <div class="clr"></div>

@@ -109,7 +109,7 @@ class HockeyModelTeams extends JModel {
         $row->review_date = date('Y-m-d H:i:s');
 
         if ($row->logo == '') {
-            $row->logo = 'non.gif';
+            $row->logo = 'nologo.png';
         }
 
         if (!$row->check()) {
@@ -127,7 +127,6 @@ class HockeyModelTeams extends JModel {
     }
 
     function getId() {
-
         return $this->_id;
     }
 

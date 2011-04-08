@@ -111,7 +111,7 @@ class HockeyModelPlayers extends JModel {
         $row->review_date = date ( 'Y-m-d H:i:s' );
 
         if ($row->foto == '') {
-            $row->foto = 'brak.jpg';
+            $row->foto = 'nophoto.jpg';
         }
 
         if (!$row->check()) {

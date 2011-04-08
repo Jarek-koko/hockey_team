@@ -2,8 +2,8 @@
 <config>
     <params>
         <param name="@heading" type="heading" default="GENERAL SETTINGS LABEL" />
-        <param name="iddsfp" type="sql" default="1" label="Select a season" description="You must select season for display in the front" query="SELECT id AS value, nazwa AS iddsfp FROM #__hockey_system" />
-        <param name="gnumber" type="radio" default="1" label="Show graphic numbers" description="If yes numbers will be change in images" >
+        <param name="iddsfp" type="sql" default="1" label="Default season" description="You must select season for display in the front" query="SELECT id AS value, nazwa AS iddsfp FROM #__hockey_system order by id desc" />
+        <param name="gnumber" type="radio" default="1" label="Show graphic numbers" description="If yes numbers will be replaced by images" >
             <option value="0">No</option>
             <option value="1">Yes</option>
         </param>

@@ -17,7 +17,7 @@ JHTML::_('behavior.calendar');
         if (document.adminForm.foto.value !='') {
             document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/hockey/players/' + document.adminForm.foto.value;
         } else {
-            document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/hockey/players/brak.gif';
+            document.adminForm.imagelib.src='<?php echo JURI::root(true); ?>/images/hockey/players/nophoto.jpg';
         }
     }
     function submitbutton(pressbutton){
@@ -58,7 +58,7 @@ JHTML::_('behavior.calendar');
                     if (eregi("gif|jpg|png", $this->items->foto)) {
                         echo '<img src="'.JURI::root(true).'/images/hockey/players/' . $this->items->foto . '" name="imagelib" />';
                     } else {
-                        echo '<img src="'.JURI::root(true).'/images/hockey/players/brak.gif" name="imagelib" />';
+                        echo '<img src="'.JURI::root(true).'/images/hockey/players/nophoto.jpg" name="imagelib" />';
                     }
                     ?></td>
             </tr>

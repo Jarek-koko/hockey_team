@@ -25,7 +25,7 @@ $path = 'images/hockey/teams/';
             if (JFile::exists($path . $this->list['logo1'])) {
                 echo '<img class="lo" src="' . JURI::base(true) . '/' . $path . $this->list['logo1'] . '" alt="logo1" />';
             } else {
-                echo '<img class="lo" src="' . JURI::base(true) . '/' . $path . 'non.gif" alt="logo1" />';
+                echo '<img class="lo" src="' . JURI::base(true) . '/' . $path . 'nologo.png" alt="logo1" />';
             } ?>
         </div>
         <div class="pop-scoor">
@@ -39,7 +39,7 @@ $path = 'images/hockey/teams/';
             if (JFile::exists($path . $this->list['logo2'])) {
                 echo '<img class="lo" src="' . JURI::base(true) . '/' . $path . $this->list['logo2'] . '" alt="logo2" />';
             } else {
-                echo '<img class="lo" src="' . JURI::base(true) . '/' . $path . 'non.gif" alt="logo2" />';
+                echo '<img class="lo" src="' . JURI::base(true) . '/' . $path . 'nologo.png" alt="logo2" />';
             } ?>
         </div>
         <div class="pop-clr"></div>
