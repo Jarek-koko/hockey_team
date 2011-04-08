@@ -88,7 +88,7 @@ $link = ($list['id_match']) ? JRoute::_('index.php?option=com_hockey&view=report
                 if (JFile::exists($path2 . $list['logo1'])) {
                     echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . $list['logo1'] . '" alt="' . $list['team1'] . '" />';
                 } else {
-                    echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . 'non.gif" alt="' . $list['team1'] . '" />';
+                    echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . 'nologo.png" alt="' . $list['team1'] . '" />';
                 } ?>
             </div>
             <div class="scoor"><?php echo $number1, ($gnumber == 1) ? '<img src="' . JURI::base(true) . '/' . $path1 . 'sk.png" alt="" />' : ' : ', $number2; ?></div>
@@ -97,7 +97,7 @@ $link = ($list['id_match']) ? JRoute::_('index.php?option=com_hockey&view=report
                 if (JFile::exists($path2 . $list['logo2'])) {
                     echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . $list['logo2'] . '" alt="' . $list['team2'] . '" />';
                 } else {
-                    echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . 'non.gif" alt="' . $list['team2'] . '" />';
+                    echo '<img class="lo" src="' . JURI::base(true) . '/' . $path2 . 'nologo.png" alt="' . $list['team2'] . '" />';
                 } ?>
             </div>
             <div class="clr"></div>
