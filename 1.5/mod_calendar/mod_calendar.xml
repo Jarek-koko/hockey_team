@@ -16,7 +16,7 @@
         <filename>tmpl/default.php</filename>
         <filename>tmpl/index.html</filename>
     </files>
-    <languages folder="lang">
+    <languages>
         <language tag="pl-PL">language/pl-PL.mod_calendar.ini</language>
         <language tag="en-GB">language/en-GB.mod_calendar.ini</language>
     </languages>

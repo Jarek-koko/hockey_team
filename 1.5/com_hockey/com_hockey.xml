@@ -22,13 +22,13 @@
     </uninstall>
 
     <!-- Site Main Language File Copy Section -->
-    <languages folder="languages/site">
+    <languages folder="language/site">
         <language tag="en-GB">en-GB.com_hockey.ini</language>
         <language tag="pl-PL">pl-PL.com_hockey.ini</language>
     </languages>
    
    <!-- Site Main File Copy Section -->
-    <files folder="site/component">
+    <files folder="site">
         <filename>controller.php</filename>
         <filename>hockey.php</filename>
         <filename>router.php</filename>
@@ -62,7 +62,7 @@
     <administration>
         <menu img="components/com_hockey/assets/icon-16-menu-hockey.png">Hockey</menu>
 
-        <files folder="admin/component">
+        <files folder="admin">
             <filename>admin.hockey.php</filename>
             <filename>config.xml</filename>
             <filename>controller.php</filename>
@@ -80,7 +80,7 @@
             <filename>uninstall.mysql.utf8.sql</filename>
         </files>
 
-        <languages folder="languages/admin">
+        <languages folder="language/admin">
             <language tag="en-GB">en-GB.com_hockey.ini</language>
             <language tag="en-GB">en-GB.com_hockey.menu.ini</language>
             <language tag="pl-PL">pl-PL.com_hockey.ini</language>
