@@ -71,7 +71,7 @@ table.tableleague tbody td.al {text-align:left; padding-left:5px}
 
 /* tabela players and statistic */
 table.tableplayers {border-spacing:1px;border-collapse:separate;background-color:#CDCDCD;font-size:11px;width:100%;text-align:center;margin:10px 0 15px}
-table.tableplayers thead tr th, table.tableplayers tfoot tr th {background-color: #E6EECC;border: 1px solid #FFF; padding: 4px;}
+table.tableplayers thead tr th, table.tableplayers tfoot tr th {background-color: #E6EECC;border: 1px solid #FFF; padding: 4px; text-align: left;}
 table.tableplayers thead tr .header {background-image: url(../assets/bg.gif);background-repeat: no-repeat;background-position: center right;cursor: pointer;}
 table.tableplayers tbody td {color: #3D3D3D;background-color:#FFF;padding: 4px;vertical-align: top; }
 table.tableplayers tbody td.al {text-align:left; padding-left:5px}

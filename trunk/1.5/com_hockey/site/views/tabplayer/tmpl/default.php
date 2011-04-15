@@ -10,7 +10,6 @@
  */
 defined('_JEXEC') or die('Restricted access');
 require_once( JPATH_ADMINISTRATOR . DS . 'components' . DS . 'com_hockey' . DS . 'helpers' . DS . 'position.php' );
-
 $i = 1;
 $show = null;
 ?>
