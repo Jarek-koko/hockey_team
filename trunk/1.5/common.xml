@@ -60,9 +60,11 @@
         </copy>
         <copy todir="${builddir}/${NAME}/images/teams" overwrite="true" verbose="${verbose}" failonerror="false">
             <filelist dir="${source}/images/hockey/teams" files="nologo.png" />
+            <filelist dir="${source}/images/hockey/teams" files="index.html" />
         </copy>
         <copy todir="${builddir}/${NAME}/images/players" overwrite="true" verbose="${verbose}" failonerror="false">
             <filelist dir="${source}/images/hockey/players" files="nophoto.jpg"/>
+            <filelist dir="${source}/images/hockey/players" files="index.html"/>
         </copy>
         <copy todir="${builddir}/${NAME}/admin" overwrite="true" verbose="${verbose}">
             <fileset dir="${source}/administrator/components/${NAME}"/>
