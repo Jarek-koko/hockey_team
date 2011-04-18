@@ -20,13 +20,11 @@
             <file driver="mysql" charset="utf8">uninstall.mysql.utf8.sql</file>
         </sql>
     </uninstall>
-
     <!-- Site Main Language File Copy Section -->
     <languages folder="language/site">
         <language tag="en-GB">en-GB.com_hockey.ini</language>
         <language tag="pl-PL">pl-PL.com_hockey.ini</language>
-    </languages>
-   
+    </languages>  
    <!-- Site Main File Copy Section -->
     <files folder="site">
         <filename>controller.php</filename>
@@ -38,7 +36,6 @@
         <folder>views</folder>
         <folder>helpers</folder>
     </files>
-
     <media folder="images" destination="../images/hockey">
         <filename>numbers/00.png</filename>
         <filename>numbers/0.png</filename>
@@ -61,7 +58,6 @@
     </media>
     <administration>
         <menu img="components/com_hockey/assets/icon-16-menu-hockey.png">Hockey</menu>
-
         <files folder="admin">
             <filename>admin.hockey.php</filename>
             <filename>config.xml</filename>
@@ -74,12 +70,10 @@
             <folder>tables</folder>
             <folder>helpers</folder>
         </files>
-
         <files folder="admin/sql">
             <filename>install.mysql.utf8.sql</filename>
             <filename>uninstall.mysql.utf8.sql</filename>
         </files>
-
         <languages folder="language/admin">
             <language tag="en-GB">en-GB.com_hockey.ini</language>
             <language tag="en-GB">en-GB.com_hockey.menu.ini</language>
@@ -87,6 +81,6 @@
             <language tag="pl-PL">pl-PL.com_hockey.menu.ini</language>
         </languages>
     </administration>
-    <installfile>admin/install.hockey.php</installfile>
-    <uninstallfile>admin/uninstall.hockey.php</uninstallfile>
+    <installfile>install.hockey.php</installfile>
+    <uninstallfile>uninstall.hockey.php</uninstallfile>
 </install>
