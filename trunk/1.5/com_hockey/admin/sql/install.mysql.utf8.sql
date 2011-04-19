@@ -1,6 +1,3 @@
-
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-
 DROP TABLE IF EXISTS `#__hockey_tabela`;
 DROP TABLE IF EXISTS `#__hockey_match_goals`;
 DROP TABLE IF EXISTS `#__hockey_match_goalie`;
