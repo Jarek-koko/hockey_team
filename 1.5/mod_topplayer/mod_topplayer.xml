@@ -2,12 +2,12 @@
 <install type="module" version="1.5">
     <name>Top Players</name>
     <author>Klich Jarosław</author>
-    <creationDate>September 2010</creationDate>
+    <creationDate>April 2011</creationDate>
     <copyright>Klich Jarosław</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <authorEmail>Jarek.koko+HockeyTeam@gmail.com</authorEmail>
     <authorUrl></authorUrl>
-    <version>Module Version 1.00</version>
+    <version>1.00</version>
     <description>Module show  top 10 players</description>
     <files>
         <filename module="mod_topplayer">mod_topplayer.php</filename>
