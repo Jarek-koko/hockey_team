@@ -87,8 +87,8 @@
             </fileset>
         </copy>
         <move file="${builddir}/${NAME}/admin/${NAME}.xml" todir="${builddir}/${NAME}" verbose="${verbose}"/>
-        <move file="${builddir}/${NAME}/admin/uninstall.hockey.php" todir="${builddir}/${NAME}/admin" verbose="${verbose}" failonerror="false"/>
-        <move file="${builddir}/${NAME}/admin/install.hockey.php" todir="${builddir}/${NAME}/admin" verbose="${verbose}" failonerror="false"/>
+        <move file="${builddir}/${NAME}/admin/uninstall.hockey.php" todir="${builddir}/${NAME}" verbose="${verbose}" failonerror="false"/>
+        <move file="${builddir}/${NAME}/admin/install.hockey.php" todir="${builddir}/${NAME}" verbose="${verbose}" failonerror="false"/>
         <move todir="${builddir}/${NAME}/admin/sql" verbose="${verbose}">
             <fileset dir="${builddir}/${NAME}/admin">
                 <include name="*.sql"/>
