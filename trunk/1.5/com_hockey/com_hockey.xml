@@ -71,6 +71,7 @@
             <folder>views</folder>
             <folder>tables</folder>
             <folder>helpers</folder>
+            <folder>elements</folder>
         </files>
         <files folder="admin/sql">
             <filename>install.mysql.utf8.sql</filename>

@@ -57,7 +57,7 @@ class HockeyViewSparring extends JView {
         if ($task == 'add') {
             // get model
             $model = &$this->getModel('teams');
-            $kl = $model->getSeasonTeamsSelect();
+            $kl = $model->getAllTeamsSelect();
             //get match info
             JTable::addIncludePath(JPATH_COMPONENT . DS . 'tables');
             $row = & JTable::getInstance('match', 'Table');
@@ -82,7 +82,7 @@ class HockeyViewSparring extends JView {
             } else {
                 // get model
                 $model = &$this->getModel('teams');
-                $kl = $model->getSeasonTeamsSelect();
+                $kl = $model->getAllTeamsSelect();
 
                 //get match info
                 JTable::addIncludePath(JPATH_COMPONENT . DS . 'tables');
