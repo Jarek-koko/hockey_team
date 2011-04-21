@@ -19,7 +19,7 @@ class HockeyViewLive extends JView {
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.js');
 
         $mainframe = &JFactory::getApplication();
-        $params = &$mainframe->getPageParameters();
+        $params =  &$mainframe->getParams();
 
         $id_match = (int) $params->get('id_match');
         $message1 = $params->get('message1', 'no match');

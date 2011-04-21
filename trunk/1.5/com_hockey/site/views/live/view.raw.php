@@ -18,7 +18,7 @@ class HockeyViewLive extends JView {
     function display($tpl = null) {
 
         $mainframe = &JFactory::getApplication();
-        $params = &$mainframe->getPageParameters();
+        $params =  &$mainframe->getParams();
         $id_match = (int) $params->get('id_match');
         $end = (int) $params->get('end');
 

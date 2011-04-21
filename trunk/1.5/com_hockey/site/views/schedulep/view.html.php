@@ -16,10 +16,10 @@ class HockeyViewSchedulep extends JView {
 
     function display($tpl = null) {
    
-        $document = & JFactory::getDocument();
+        $document = &JFactory::getDocument();
         $model = &$this->getModel();
         $mainframe = &JFactory::getApplication();
-        $params = &$mainframe->getPageParameters();
+        $params = &$mainframe->getParams();
 
         $model->setSezon($params->get('iddsfp'));
         // list matches in matchday

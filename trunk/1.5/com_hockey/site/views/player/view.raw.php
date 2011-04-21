@@ -35,7 +35,7 @@ class HockeyViewPlayer extends JView {
         }
 
         $mainframe = &JFactory::getApplication();
-        $params = &$mainframe->getPageParameters();
+        $params =  &$mainframe->getParams();
         $model = &$this->getModel();
         $model->setSezon($params->get('iddsfp'));
 

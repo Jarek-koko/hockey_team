@@ -23,7 +23,7 @@ class HockeyViewStats extends JView {
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.tablesorter.js');
 
         $mainframe = &JFactory::getApplication();
-        $params = &$mainframe->getPageParameters();
+        $params = &$mainframe->getParams();
 
         $menus = &JSite::getMenu ();
         $menu = $menus->getActive();

@@ -20,7 +20,7 @@ class HockeyViewPlayers extends JView {
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/tooltip.js');
        
         $mainframe = &JFactory::getApplication();
-        $params = $mainframe->getPageParameters();
+        $params = &$mainframe->getParams();
         $model = &$this->getModel();
         $players = $model->getListPlayers($params->get('iddsfp'));
 

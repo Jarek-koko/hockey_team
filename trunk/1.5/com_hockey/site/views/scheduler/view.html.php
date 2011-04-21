@@ -18,7 +18,7 @@ class HockeyViewScheduler extends JView {
         $mainframe = &JFactory::getApplication();
         $document = & JFactory::getDocument();
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.js');
-        $params = &$mainframe->getPageParameters();
+        $params = &$mainframe->getParams();
         $model = &$this->getModel();
         $model->setSezon($params->get('iddsfp'));
 

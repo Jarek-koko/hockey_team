@@ -22,7 +22,7 @@ class HockeyViewTable extends JView {
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.tablesorter.js');
 
         $model = &$this->getModel();
-        $params = &$mainframe->getPageParameters();
+        $params = &$mainframe->getParams();
         $model->setSezon($params->get('iddsfp'));
 
         //get list teams for table
