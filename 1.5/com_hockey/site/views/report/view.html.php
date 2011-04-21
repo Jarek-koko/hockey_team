@@ -22,7 +22,7 @@ class HockeyViewReport extends JView {
         $buttonback = '<a href = "javascript:history.back()"><img src="' . JURI::base(true) . '/components/com_hockey/assets/back.jpg" alt="back" /></a>';
 
         $mainframe = &JFactory::getApplication();
-        $document = & JFactory::getDocument();
+        $document = &JFactory::getDocument();
 
         if ($id == 0) {
             JError::raiseError(404, JText::_("Report not found"));
@@ -47,7 +47,7 @@ class HockeyViewReport extends JView {
             $penalty = $model->getPenalty();
             $goalie = $model->getGoalie();
 
-            $params = &$mainframe->getPageParameters();
+            $params =  &$mainframe->getParams();
             $gnumber = $params->get('gnumber', 0);
             $document->setTitle($list['home'].' - '.$list['visitor'] );
 

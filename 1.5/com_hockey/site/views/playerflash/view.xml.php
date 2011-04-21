@@ -16,7 +16,7 @@ class HockeyViewPlayerflash extends JView {
 
     function display($tpl = null) {
         $mainframe = &JFactory::getApplication();
-        $params = &$mainframe->getPageParameters();
+        $params =  &$mainframe->getParams();
         $model = &$this->getModel();
         $rows = $model->getListPlayers($params->get('iddsfp'));
 
