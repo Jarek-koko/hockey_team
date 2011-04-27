@@ -50,8 +50,8 @@ CREATE TABLE IF NOT EXISTS `#__hockey_match_goalie` (
   `save` tinyint(4) unsigned DEFAULT NULL,
   `id_team` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `NewIndex1` (`id_player`),
-  KEY `FK_new_hockey_match_goalie` (`id_match`),
+  KEY `NewIndex0` (`id_player`),
+  KEY `NewIndex1` (`id_match`),
   KEY `NewIndex2` (`id_team`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `#__hockey_match_goals` (
   `period` tinyint(1) DEFAULT NULL,
   `info` varchar(5) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK_new_hockey_match_goals` (`id_match`),
+  KEY `NewIndex0` (`id_match`),
   KEY `NewIndex1` (`id_team`),
   KEY `NewIndex2` (`shooter`),
   KEY `NewIndex3` (`assist1`),
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `#__hockey_match_penalty` (
   `time_p` tinyint(4) NOT NULL,
   `period` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `id_match` (`id_match`),
+  KEY `NewIndex0` (`id_match`),
   KEY `NewIndex1` (`id_player`),
   KEY `NewIndex2` (`id_team`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `#__hockey_match_players` (
   `id_player` int(11) NOT NULL,
   `id_team` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK_new_hockey_players_in_match` (`id_match`),
+  KEY `NewIndex0` (`id_match`),
   KEY `NewIndex1` (`id_player`),
   KEY `NewIndex2` (`id_team`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
