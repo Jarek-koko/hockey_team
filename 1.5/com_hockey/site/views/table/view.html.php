@@ -17,13 +17,12 @@ class HockeyViewTable extends JView {
     function display($tpl = null) {
 
         $document = & JFactory::getDocument();
-        $mainframe = &JFactory::getApplication();
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.js');
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.tablesorter.js');
 
         $model = &$this->getModel();
-        $params = &$mainframe->getParams();
-        $model->setSezon($params->get('iddsfp'));
+        $params = &JComponentHelper::getParams( 'com_hockey' );
+        $model->setSezon($params->get('iddsfp'),$params->get('show_select'));
 
         //get list teams for table
         $list = $model->getData();

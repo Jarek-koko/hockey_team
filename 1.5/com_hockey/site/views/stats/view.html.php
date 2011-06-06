@@ -22,9 +22,7 @@ class HockeyViewStats extends JView {
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.tools.min.js');
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.tablesorter.js');
 
-        $mainframe = &JFactory::getApplication();
-        $params = &$mainframe->getParams();
-
+        $params = &JComponentHelper::getParams( 'com_hockey' );
         $menus = &JSite::getMenu ();
         $menu = $menus->getActive();
 
@@ -40,8 +38,12 @@ class HockeyViewStats extends JView {
 
         $session = &JFactory::getSession();
         $idsezon = (int) $session->get('idsezon', 0);
-        if ($idsezon == 0) $idsezon = $params->get('iddsfp');
-
+        $show = (int) $params->get('show_select', 0);
+        
+        if (($idsezon == 0) || ($show == 0)) {
+            $idsezon = $params->get('iddsfp');
+        }
+        
         $model = &$this->getModel();
         $sezony = $model->getSezonList();
 

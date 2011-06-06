@@ -17,6 +17,7 @@ class HockeyModelScheduler extends JModel {
     var $_idsezon = null;
     var $_matchday = null;
 
+
     function __construct() {
         parent::__construct ();
         $session = &JFactory::getSession();
@@ -24,13 +25,15 @@ class HockeyModelScheduler extends JModel {
         $this->_matchday = (int) $session->get('matchday' , 1);
     }
 
-    function setSezon($idsezon) {
+    function setSezon($idsezon, $show) {
         $idsezon = (int) $idsezon;
-        if ($this->_idsezon == 0) {
+        $show = (int) $show;
+        
+        if (($this->_idsezon == 0) || ($show == 0)) {
             $this->_idsezon = $idsezon;
-        }
+        } 
     }
-
+    
     function getSezon(){
         return $this->_idsezon;
     }

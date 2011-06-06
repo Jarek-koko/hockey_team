@@ -17,12 +17,10 @@ class HockeyViewReports extends JView {
     function display($tpl = null) {
        
         $document = & JFactory::getDocument();
-        $mainframe = &JFactory::getApplication();
-
-        $params = &$mainframe->getParams();
+        $params = &JComponentHelper::getParams( 'com_hockey' );
         $model = &$this->getModel();
 
-        $model->setSezon($params->get('iddsfp'));
+        $model->setSezon($params->get('iddsfp'),$params->get('show_select'));
         $rows = $model->getList();
 
         $menus = &JSite::getMenu();
