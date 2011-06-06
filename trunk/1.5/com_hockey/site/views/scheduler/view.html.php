@@ -15,13 +15,13 @@ JHTML::addIncludePath(JPATH_COMPONENT . DS . 'helpers');
 class HockeyViewScheduler extends JView {
 
     function display($tpl = null) {
-        $mainframe = &JFactory::getApplication();
+      
         $document = & JFactory::getDocument();
         $document->addScript(JURI::base(true) . '/components/com_hockey/assets/jquery.js');
-        $params = &$mainframe->getParams();
+        $params = &JComponentHelper::getParams( 'com_hockey' );
         $model = &$this->getModel();
-        $model->setSezon($params->get('iddsfp'));
-
+        $model->setSezon($params->get('iddsfp'),$params->get('show_select'));
+    
         // list matchday
         $list = $model->getListMatchday();
         // list matches in matchday

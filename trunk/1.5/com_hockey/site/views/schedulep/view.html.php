@@ -18,10 +18,9 @@ class HockeyViewSchedulep extends JView {
    
         $document = &JFactory::getDocument();
         $model = &$this->getModel();
-        $mainframe = &JFactory::getApplication();
-        $params = &$mainframe->getParams();
+        $params = &JComponentHelper::getParams( 'com_hockey' );
 
-        $model->setSezon($params->get('iddsfp'));
+        $model->setSezon($params->get('iddsfp'),$params->get('show_select'));
         // list matches in matchday
         $rows = $model->getListPlayoff();
 

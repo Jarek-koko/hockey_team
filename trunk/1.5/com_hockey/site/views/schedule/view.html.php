@@ -16,10 +16,9 @@ class HockeyViewSchedule extends JView {
 
     function display($tpl = null) {
       
-        $mainframe = &JFactory::getApplication();
         $document = & JFactory::getDocument();
         $model = &$this->getModel();
-        $params =  &$mainframe->getParams();
+        $params = &JComponentHelper::getParams('com_hockey');
 
         $model->setSezon($params->get('iddsfp'));
 

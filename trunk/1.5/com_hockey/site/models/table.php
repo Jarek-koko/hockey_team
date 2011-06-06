@@ -38,11 +38,13 @@ class HockeyModelTable extends JModel {
         return $query;
     }
 
-    function setSezon($idsezon) {
+    function setSezon($idsezon, $show) {
         $idsezon = (int) $idsezon;
-        if ($this->_idsezon == 0) {
+        $show = (int) $show;
+        
+        if (($this->_idsezon == 0) || ($show == 0)) {
             $this->_idsezon = $idsezon;
-        }
+        } 
     }
 
     function getSezon(){
