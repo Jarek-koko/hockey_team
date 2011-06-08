@@ -43,8 +43,7 @@ class HockeyModelPlayer extends JModel {
         if (!$this->_player) {
             $query = "SELECT P.*,(YEAR(CURDATE()) - YEAR(P.data_u)) - (RIGHT(CURDATE(), 5) < RIGHT(P.data_u, 5)) AS wiek "
                     ."FROM #__hockey_players P "
-                    ."WHERE (P.id = ". $this->_db->Quote($this->_idplayer ).") "
-                    ."AND P.klub=(SELECT myteam FROM #__hockey_system WHERE (id=". $this->_db->Quote($this->_idseason).")) ";
+                    ."WHERE (P.id = ". $this->_db->Quote($this->_idplayer )." )";
             $this->_db->setQuery($query);
             $this->_player = $this->_db->loadObject();
         }
