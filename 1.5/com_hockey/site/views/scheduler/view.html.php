@@ -26,7 +26,7 @@ class HockeyViewScheduler extends JView {
         $list = $model->getListMatchday();
         // list matches in matchday
         $rows = $model->getListMatches();
-
+  
         $menus = &JSite::getMenu();
         $menu = $menus->getActive();
 

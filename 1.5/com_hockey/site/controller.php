@@ -23,7 +23,7 @@ class HockeyController extends JController {
     }
 
     // get query post from helper selectseason
-    // work white raports, table, stats, schedule-r-p,
+    // work with raports, table, stats, schedule-r-p,
     function querypost() {
        $idsezon = (int) JRequest::getVar('sezon', 0, 'post', 'int');
        $page =  JRequest::getVar('page', 'reports', 'post', 'word');
@@ -34,7 +34,7 @@ class HockeyController extends JController {
     }
 
     // get query post from square id_matchday
-    // work only white scheduler
+    // work only with scheduler
     function querypost2() {
        $matchday = (int) JRequest::getVar('matchday', 0, 'post', 'int');
        $session =&JFactory::getSession();
@@ -43,7 +43,7 @@ class HockeyController extends JController {
     }
 
     // get query post from schedule
-    // work only white schedule
+    // work only with schedule
     function querypost3() {
        $idsezon = (int) JRequest::getVar('sezon', 0, 'post', 'int');
        $tom =     (int) JRequest::getVar('tom', 0, 'post', 'int');
