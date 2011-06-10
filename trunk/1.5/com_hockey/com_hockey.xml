@@ -6,9 +6,9 @@
     <authoremail>Jarek.koko+HockeyTeam@gmail.com</authoremail>
     <authorurl>http://hockey.jarek.yum.pl/</authorurl>
     <copyright>Klich Jarosław</copyright>
-    <creationdate>April 2011</creationdate>
+    <creationdate>June 2011</creationdate>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <version>0.95 beta</version>
+    <version>1.0 stable</version>
     <description>Hockey Team</description>
     <installfile>install.hockey.php</installfile>
     <uninstallfile>uninstall.hockey.php</uninstallfile>
