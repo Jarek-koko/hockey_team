@@ -20,6 +20,9 @@ class HockeyControllerAjax extends JController {
     }
 
     function display() {
+        $document =& JFactory::getDocument();
+        $document->setMimeEncoding('text/plain');
+        
         $team = (int) JRequest::getVar('state', 0, 'get', 'int');
 
         if ($team == 0) {
@@ -45,6 +48,10 @@ class HockeyControllerAjax extends JController {
     }
 
     function getg() {
+        $document =& JFactory::getDocument();
+        $document->setMimeEncoding('text/plain');
+        
+        
         $id_team = (int) JRequest::getVar('id_team', 0, 'get', 'int');
         if ($id_team == 0) {
             echo '<option value="no">' . JText::_('HOS_NO_PLAYERS') . '</option>';
