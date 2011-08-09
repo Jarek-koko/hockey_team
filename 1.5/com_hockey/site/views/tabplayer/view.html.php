@@ -14,7 +14,10 @@ jimport('joomla.application.component.view');
 class HockeyViewTabplayer extends JView {
 
     function display($tpl = null) {
-
+        
+        $document =& JFactory::getDocument();
+        $document->setMimeEncoding('text/plain');
+        
         $model = & $this->getModel('stats');
         $id = (int) JRequest::getVar('id', 0, 'get', 'INT');
         $sez = (int) JRequest::getVar('sez', 0, 'get', 'INT');

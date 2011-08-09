@@ -15,6 +15,10 @@ jimport('joomla.filesystem.file');
 class HockeyViewModcal extends JView {
 
     function display($tpl = null) {
+        
+        $document =& JFactory::getDocument();
+        $document->setMimeEncoding('text/plain');
+        
         $id = (int) JRequest::getVar('id', 0, 'get', 'INT');
 
         if ($id == 0) {

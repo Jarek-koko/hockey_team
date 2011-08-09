@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <property environment="env"/>
-    <property name="source"	value="${env.SOURCEDIR}"/>
+    <property name="source"	value="${env.SOURCEDIR}\hokej"/>
     <property name="release" 	value="${env.RELEASEDIR}\hockey\Releases"/>
     <property name="builddir" 	value="${env.BUILDDIR}"/>
     <property name="verbose" 	value="false"/>
