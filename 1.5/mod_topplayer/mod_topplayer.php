@@ -26,9 +26,9 @@ $link3 = JRoute::_('index.php?option=com_hockey&task=modtop&view=modtop&id=3&sez
 <script type="text/javascript">
 //<![CDATA[
 jQuery.noConflict();
-jQuery(document).ready(function($)
+jQuery(document).ready(function()
 {
-    $("ul.tabs-nav").tabs("div.tabs-panes > div", {effect: 'ajax', onBeforeClick: function(event, i) {
+    jQuery("ul.tabs-nav").tabs("div.tabs-panes > div", {effect: 'ajax', onBeforeClick: function(event, i) {
        var pane = this.getPanes("div.tabs-panes > div");
            pane.html('<img src="<?php echo  JURI::base(true) ?>/components/com_hockey/assets/loading.gif" />');
      }

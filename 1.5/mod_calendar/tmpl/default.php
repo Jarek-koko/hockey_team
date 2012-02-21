@@ -58,7 +58,7 @@ if ($show_tooltips == 1) {
             <li class="actual" ><span><b><?php echo JText::_($title)?></b></span></li>
             <li class="prev"><?php echo $next;?></li>
             </ul>
-            <div style="clear:both;"></div>
+            <div style="clear:both; display: none;"></div>
         </div>
         <table cellspacing="2" cellpadding="0">
             <tr><th scope="col"><?php echo JText::_('HOC_MONDAY'); ?></th>
