@@ -53,7 +53,7 @@ defined('_JEXEC') or die('Restricted access');
         <li class="actual"><span><b><?php echo $title; ?></b></span></li>
         <li class="next"><a href="#next"><img src="<?php echo JURI::base(true) ?>/components/com_hockey/assets/next.png" alt="next" /></a></li>
     </ul>
-    <div style="clear:both;"></div>
+    <div style="clear:both; display:none;"></div>
 </div>
 <div id="modmatch" class="mdaylist"></div>
 
